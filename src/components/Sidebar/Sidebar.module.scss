@@ -19,10 +19,10 @@
                 background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 48%, $color-white 100%);
                 position: absolute;
                 content: '';
-                width: 0.8px;
+                width: 1px;
                 height: 540px;
                 top: 30px;
-                right: -10px;
+                right: -5px;
                 bottom: 0;
             }
         }
