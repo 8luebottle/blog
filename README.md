@@ -1,4 +1,5 @@
 ## Developer Blog
+Contents of my blog
 + Think : Personal Thinking
 + TIL : Today I Learned
 + Articles : Translation of Articles
@@ -6,6 +7,7 @@
 ## Focus on
 + JavaScript
 + C | C++
++ React | React Native
 
 
 ## Folder Structure
