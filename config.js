@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://babytiger.netlify.com',
   title: 'Blog by Baby Tiger',
-  subtitle: 'Hello, friend',
+  subtitle: 'Developer Blog',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
