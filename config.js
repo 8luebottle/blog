@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://babytiger.netlify.com',
   title: 'Blog by Baby Tiger',
   subtitle: 'Developer Blog',
-  copyright: '© All rights reserved.',
+  copyright: 'Copyright © 2019 Baby Tiger. All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: '#',
@@ -25,7 +25,7 @@ module.exports = {
   author: {
     name: 'Baby Tiger',
     photo: '/bt-profile.jpg',
-    bio: 'Hello, friend',
+    bio: 'Developer Blog',
     contacts: {
       email: 'itbiz.irs@gmail.com',
       telegram: '#',
