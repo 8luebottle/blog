@@ -14,11 +14,11 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'About me',
+      label: 'About Blog',
       path: '/pages/about'
     },
     {
-      label: 'Contact me',
+      label: 'About Me',
       path: '/pages/contacts'
     }
   ],
