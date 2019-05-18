@@ -15,7 +15,7 @@ description: "원시값, 참조값의 차이점에 대해 알아보자"
 자바스크립트에서 자료형은 기본타입(Primitive Type)과 참조타입(Reference Type)으로 나뉜다.
 기본타입은 string, number, null, undefined, boolean 그리고 ES6에서 새로이 추가된 symbol 로 구성된다. 기본타입 이외의 모든 것들 예를 들어 object, array, 그리고 fucntion은 참조타입이다.
 
-![42-line-bible.jpg](/media/js-data-type.png)
+![js-data-type.jpg](/media/js-data-type.png)
 
 ## Copying Values
 

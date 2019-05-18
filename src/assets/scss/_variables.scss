@@ -17,7 +17,7 @@ $color-gray-bg: lighten($color-base, 79%);
 $typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 $typographic-root-font-size: 100;
-$typographic-base-font-size: 16px;
+$typographic-base-font-size: 14px; //body font size
 $typographic-small-font-size: 14px;
 
 $typographic-base-line-height: 1.625;
@@ -29,8 +29,8 @@ $typographic-link-s-font-color: $color-secondary;
 $typographic-leading: round(16 * ($typographic-root-font-size / 100) * $typographic-base-line-height);
 
 // Buttons
-$button-height: 35px;
-$button-border-radius: 20px;
+$button-height: 25px;
+$button-border-radius: 8px; //round conner
 
 // Layout
 $layout-post-single-width: 945px;

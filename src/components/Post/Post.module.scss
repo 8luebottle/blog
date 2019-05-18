@@ -14,17 +14,17 @@
     padding: 0 15px;
   }
 
-  &__home-button {
+  &__home-button { // All Articles Button
     display: block;
     max-width: 90px;
     height: $button-height;
-    padding: 0 24px;
+    padding: 0 20px;
     line-height: $button-height;
     text-align: center;
     color: $color-base;
-    border: 1px solid $color-gray-border;
+    border: 2px solid $color-gray-border;
     border-radius: $button-border-radius;
-    font-size: $typographic-base-font-size;
+    font-size: 13px;
     font-weight: normal;
     margin-left: auto;
     margin-right: auto;
