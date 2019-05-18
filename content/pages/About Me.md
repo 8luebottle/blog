@@ -1,8 +1,8 @@
 ---
 title: "About Me"
 template: "page"
-path: "/content/pages/About Me/"
-slug: "/pages/About Me/"
+path: "/About Me/"
+slug: "/About Me/"
 ---
 
 <div><b>아기호랑이</b>는 저의 대학시절의 별명입니다. </div>

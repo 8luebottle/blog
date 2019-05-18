@@ -1,7 +1,8 @@
 ---
 title: "About Blog"
 template: "page"
-path: "/"
+path: "/About Blog/"
+slug: "/About Blog/"
 ---
 
 <body>
