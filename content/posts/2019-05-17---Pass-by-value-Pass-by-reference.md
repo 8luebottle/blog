@@ -13,7 +13,8 @@ tags:
   - "Reference value"
   - "참조타입"
   - "자료형"
-description: "원시값, 참조값의 차이점과 값이 복사될시에 메모리에서 어떠한 현상이 일어나는지 알아보자"
+description: "기본타입과 참조타입의 값이 복사될시에 차이점이 무엇이며 메모리에서 어떠한 현상이 일어나는지 알아보자"
+
 ---
 자바스크립트에서 자료형은 기본타입(Primitive Type)과 참조타입(Reference Type)으로 나뉜다.
 기본타입은 string, number, null, undefined, boolean 그리고 ES6에서 새로이 추가된 symbol 로 구성된다. 기본타입 이외의 모든 것들 예를 들어 object, array, 그리고 fucntion은 참조타입이다.
@@ -27,13 +28,6 @@ Primitive value는 값을 복제할 시
 
 ##Reference
 https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0
-
-
-
-The first printed books were, at first, perceived as inferior to the handwritten ones. They were smaller and cheaper to produce. Movable type provided the printers with flexibility that allowed them to print books in languages other than Latin. Gill describes the transition to industrialism as something that people needed and wanted. Something similar happened after the first printed books emerged. People wanted books in a language they understood and they wanted books they could take with them. They were hungry for knowledge and printed books satisfied this hunger.
-
-
-*The 42–Line Bible, printed by Gutenberg.*
 
 But, through this transition, the book lost a large part of its humanity. The machine took over most of the process but craftsmanship was still a part of it. The typefaces were cut manually by the first punch cutters. The paper was made by hand. The illustrations and ornaments were still being hand drawn. These were the remains of the craftsmanship that went almost extinct in the times of Eric Gill.
 
