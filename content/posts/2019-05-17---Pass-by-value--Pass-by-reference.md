@@ -9,5 +9,3 @@ description: "원시값, 참조값의 차이점에 대해 알아보자."
 ---
 
 
-##Reference
-https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0

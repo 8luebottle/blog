@@ -8,9 +8,12 @@ category: "JavaScript"
 tags:
   - "Java Script"
   - "TIL"
-  - "원시값"
-  - "참조값"
-description: "원시값, 참조값의 차이점에 대해 알아보자"
+  - "Primitive value"
+  - "기본타입"
+  - "Reference value"
+  - "참조타입"
+  - "자료형"
+description: "원시값, 참조값의 차이점과 값이 복사될시에 메모리에서 어떠한 현상이 일어나는지 알아보자"
 ---
 자바스크립트에서 자료형은 기본타입(Primitive Type)과 참조타입(Reference Type)으로 나뉜다.
 기본타입은 string, number, null, undefined, boolean 그리고 ES6에서 새로이 추가된 symbol 로 구성된다. 기본타입 이외의 모든 것들 예를 들어 object, array, 그리고 fucntion은 참조타입이다.
@@ -22,8 +25,10 @@ description: "원시값, 참조값의 차이점에 대해 알아보자"
 Primitive value는 값을 복제할 시
 
 
+##Reference
+https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0
 
-A similar conflict emerged after the invention of the first printing press in Europe. Johannes Gutenberg invented movable type and used it to produce different compositions. His workshop could print up to 240 impressions per hour. Until then, the books were being copied by hand. All the books were handwritten and decorated with hand drawn ornaments and figures. A process of copying a book was long but each book, even a copy, was a work of art.
+
 
 The first printed books were, at first, perceived as inferior to the handwritten ones. They were smaller and cheaper to produce. Movable type provided the printers with flexibility that allowed them to print books in languages other than Latin. Gill describes the transition to industrialism as something that people needed and wanted. Something similar happened after the first printed books emerged. People wanted books in a language they understood and they wanted books they could take with them. They were hungry for knowledge and printed books satisfied this hunger.
 
@@ -55,25 +60,8 @@ Each transition took away a part of humanity from written language. Handwritten 
 	</blockquote>
 </figure>
 
-Typefaces don’t look handmade these days. And that’s all right. They don’t have to. Industrialism took that away from them and we’re fine with it. We’ve traded that part of humanity for a process that produces more books that are easier to read. That can’t be bad. And it isn’t.
-
-> Humane typography will often be comparatively rough and even uncouth; but while a certain uncouthness does not seriously matter in humane works, uncouthness has no excuse whatever in the productions of the machine.
->
-> — Eric Gill
-
-We’ve come close to “perfection” in the last five centuries. The letters are crisp and without rough edges. We print our compositions with high–precision printers on a high quality, machine made paper.
-
-*Type through 5 centuries.*
-
-We lost a part of ourselves because of this chase after perfection. We forgot about the craftsmanship along the way. And the worst part is that we don’t care. The transition to the digital age made that clear. We choose typefaces like clueless zombies. There’s no meaning in our work. Type sizes, leading, margins… It’s all just a few clicks or lines of code. The message isn’t important anymore. There’s no more “why” behind the “what”.
-
-## Chasing perfection
-
-Human beings aren’t perfect. Perfection is something that will always elude us. There will always be a small part of humanity in everything we do. No matter how small that part, we should make sure that it transcends the limits of the medium. We have to think about the message first. What typeface should we use and why? Does the typeface match the message and what we want to communicate with it? What will be the leading and why? Will there be more typefaces in our design? On what ground will they be combined? What makes our design unique and why? This is the part of humanity that is left in typography. It might be the last part. Are we really going to give it up?
 
 - [The first transition](#the-first-transition)
 - [The digital age](#the-digital-age)
 - [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
 - [Chasing perfection](#chasing-perfection)
-
-*Originally published by [Matej Latin](http://matejlatin.co.uk/) on [Medium](https://medium.com/design-notes/humane-typography-in-the-digital-age-9bd5c16199bd?ref=webdesignernews.com#.lygo82z0x).*
