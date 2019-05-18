@@ -24,7 +24,7 @@ module.exports = {
   ],
   author: {
     name: 'Baby Tiger',
-    photo: '/bt-profile.jpg',
+    photo: '/photo.jpg',
     bio: 'Developer Blog',
     contacts: {
       email: 'itbiz.irs@gmail.com',
