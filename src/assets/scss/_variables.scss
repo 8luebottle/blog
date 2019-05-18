@@ -4,13 +4,13 @@
  */
 
 // Colors
-$color-base: rgb(73, 73, 73);
-$color-primary: rgb(0, 41, 122);
+$color-base: rgb(55, 55, 61);
+$color-primary: rgb(11, 95, 173);
 $color-secondary: #de00c9;
 
-$color-white: #FFF;
+$color-white: rgb(255, 255, 255);
 $color-gray: lighten($color-base, 20%); //side bar gary color transparency
-$color-gray-border: lighten($color-base, 75%); //side bar line colors transparenct
+$color-gray-border: lighten($color-base, 70%); // gray color (botton, line bar)
 $color-gray-bg: lighten($color-base, 80%); //side bar icon
 
 // Typographic

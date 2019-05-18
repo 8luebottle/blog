@@ -19,10 +19,10 @@
                 background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 20%, $color-white 100%);
                 position: absolute;
                 content: '';
-                width: 2.5px;
+                width: 3px; //gray line width
                 height: 850px;
                 top: 30px;
-                right: -5px; //sidebar-gray line
+                right: -10px; //sidebar-gray line
                 bottom: 0;
             }
         }
@@ -33,7 +33,7 @@
     .sidebar {
         lost-column: 1/4; // sidebar-right margin
         &__inner {
-            padding: 25px; // sidebar-left margin
+            padding: 40px; // sidebar-left margin
         }
     }
 }

@@ -51,7 +51,7 @@
     }
 
     & img {
-      max-width: 100%;
+      max-width: 70%; // image sizes
     }
 
   }
@@ -63,21 +63,21 @@
     padding: 0;
 
     &__title { //post title
-      font-size: $typographic-base-font-size * 2.5;
-      @include line-height(2.25);
-      @include margin-top(2.25);
-      @include margin-bottom(1.5)
+      font-size: $typographic-base-font-size * 2.5; //body
+      @include line-height(2.5); //btw title and body paragraph
+      @include margin-top(3); // title top
+      @include margin-bottom(2)
     }
 
     &__body {
       font-size: $typographic-base-font-size * 1.125;
-      @include line-height(1.125);
-      @include margin-bottom(1.125);
+      @include line-height(0.8); // link line-height (ball point)
+      @include margin-bottom(2.5); // btw body and bottom line
 
       & p {
-        font-size: $typographic-base-font-size * 1.125;
-        @include line-height(1.125);
-        @include margin-bottom(1.125)
+        font-size: $typographic-base-font-size * 1.1; //body font size
+        @include line-height(1.125); // body font lune height
+        @include margin-bottom(1.5) // enter space
       }
 
     }
