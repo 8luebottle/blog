@@ -6,7 +6,7 @@
 // Colors
 $color-base: rgb(55, 55, 61);
 $color-primary: rgb(11, 95, 173);
-$color-secondary: #c43ab6;
+$color-secondary: #dd4ecf;
 
 $color-white: rgb(255, 255, 255);
 $color-gray: lighten($color-base, 20%); //side bar gary color transparency
@@ -17,7 +17,7 @@ $color-gray-bg: lighten($color-base, 80%); //side bar icon
 $typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 $typographic-root-font-size: 100; //line margin
-$typographic-base-font-size: 14px; //body font size
+$typographic-base-font-size: 16px; //body font size
 $typographic-small-font-size: 14px; //copyright font size
 
 $typographic-base-line-height: 1.5; // Menu line spaces
