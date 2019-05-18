@@ -1,6 +1,7 @@
 ---
 title: "About Blog"
 template: "page"
+path: "/About Blog"
 ---
 
 <body>
