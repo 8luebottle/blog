@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       label: 'About Me',
-      path: '/'
+      path: '/pages/About Me/'
     }
   ],
   author: {
