@@ -19,10 +19,10 @@
                 background: linear-gradient(to bottom, $color-gray-border 0%, $color-gray-border 20%, $color-white 100%);
                 position: absolute;
                 content: '';
-                width: 1px;
-                height: 540px;
+                width: 2.5px;
+                height: 850px;
                 top: 30px;
-                right: -5px;
+                right: -5px; //sidebar-gray line
                 bottom: 0;
             }
         }
@@ -31,9 +31,9 @@
 
 @include breakpoint-md {
     .sidebar {
-        lost-column: 1/3;
+        lost-column: 1/4; // sidebar-right margin
         &__inner {
-            padding: 40px;
+            padding: 25px; // sidebar-left margin
         }
     }
 }
