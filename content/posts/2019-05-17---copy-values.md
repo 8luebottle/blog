@@ -40,10 +40,10 @@ primitive value 와 reference value가 복사될 때의 차이점을 알기 위�
 ![stack.jpg](/media/stack.jpg)
 
 <b>[ 힙 Heap ]</b><br>
-스택에 차곡차곡 가지런히 저장되어 있는 기본변수와는 달리 참조변수는 정해진 순서없이 힙이라는 메모리공간에 패턴없이 저장되게 된다. 그리하여 힙에 저장되어 있는 데이터를 찾을때의 속도가 스택보다는 느리다. 그렇다면 규칙없이 이곳 저곳 저장되어버린 참조변수를 어떻게 찾아낼 것인가?
+스택에 차곡차곡 가지런히 저장되어 있는 기본변수와는 달리 참조변수는 힙이라는 메모리공간에 패턴없이 저장되게 된다. 그리하여 힙에 저장되어 있는 데이터를 찾을때의 속도가 스택보다는 느리다. 그렇다면 규칙없이 이곳 저곳 저장되어버린 참조변수를 어떻게 찾아낼 것인가?
 ![heap.png](/media/heap.png)
 방법은 포인터(pointer)에 있다. 포인터는 메모리의 주소를 담고 있다. 즉, 참조변수의 값을 가지고 있는 것이 아니라 '참조변수가 들고있는 값의 주소'를 담고 있다는 의미다. Pointer라는 단어를 살펴본다면 '특정 주소를 pointing(👈🏾)한다'는 뜻이 내포되어있다는 것을 알 수 있다. 정리하자면 포인터는 특정 주소를 지니고 있는 변수이다.
-<center> ** <u>포인터는 스택</u>에 저장되고 포인터가 가리키는 <u>참조변수는 힙</u>에 저장된다 ** </center>
+<center> ** <u>포인터는 스택</u>에 저장되고 포인터가 가리키는 <u>참조값은 힙</u>에 저장된다 ** </center>
 
 
 ## Copying values
@@ -70,8 +70,7 @@ Chris와 James 두 친구가 점심을 먹기위해 In N Out에 갔다. chrisOrd
   }
 </code></span></div>
 
-콘솔에 jamesOrder을 찍어보면 chrisOrder의 값이 똑같이 복사된 것을 알 수 있다. <br><br>
-Chris는 우유부단하여 더블더블 버거 대신 치즈버거가 먹고싶어 졌다. 12번 라인의 명령문을 통해 크리스가 cheese burger를 먹을 수 있도록 바꾸어주자. 
+콘솔에 jamesOrder을 찍어보면 chrisOrder의 값이 똑같이 복사된 것을 알 수 있다. <br><br> 한 우유부단 하는 Chris는 더블더블 버거 대신 치즈버거가 먹고싶어졌다. 12번 라인의 명령문을 통해 크리스가 cheese burger를 먹을 수 있도록 바꾸어주자. 
 <div class="colorscripter-code" style="color:#f0f0f0; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important; overflow:auto"><table class="colorscripter-code-table" style="margin:0; padding:0; border:none; background-color:#272727; border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px; border-right:2px solid #4f4f4f"><div style="margin:0; padding:0; word-break:normal; text-align:right; color:#aaa; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:120%"><div style="line-height:120%">11</div><div style="line-height:120%">12</div><div style="line-height:120%">13</div><div style="line-height:120%">14</div></div></td><td style="padding:6px 0"><div style="margin:0; padding:0; color:#f0f0f0; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:120%"><div style="padding:0 6px; white-space:pre; line-height:120%">&nbsp;</div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:120%">chrisOrder.hamburger&nbsp;<font color="#0086b3"></font><font color="#ff3399">=</font>&nbsp;<font color="#ffd500">"cheese&nbsp;burger"</font>;</div><div style="padding:0 6px; white-space:pre; line-height:120%"><font color="#4be6fa">console</font>.log(chrisOrder);</div><div style="background-color:#303030; padding:0 6px; white-space:pre; line-height:120%"><font color="#4be6fa">console</font>.log(jamesOrder);</div></div></td><td style="vertical-align:bottom; padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none; color:white"><span style="font-size:9px; word-break:normal; background-color:#4f4f4f; color:white; border-radius:10px; padding:1px">cs</span></a></td></tr></table></div>
 
 13번라인의 chrisOrder의 출력 결과를 보면 "double-double" 에서 "cheese burger"로 잘 바뀐 것을 알 수 있다.<br>
@@ -91,9 +90,10 @@ Chris는 우유부단하여 더블더블 버거 대신 치즈버거가 먹고싶
   }
 </span></code>
 
-이런 결과가 발생한 이유는 자바스크립트에서 Object는 참조형이기 때문이다. 두 참조변수 jamesOrder와 chrisOrder의 값은 heap에 저장되어 있지만 해당 값을 가리키는 포인터는 stack에 저장되어 있다. jamesOrder의 포인터와 chrisOrder의 포인터가 가리키는 object는 같다. Object의 값을 바꾼다면 같은 주소를 들고있는 두 변수 jamesOrderd와 chrisOrder는 함께 영향을 받게된다.
+이런 결과가 발생한 이유는 자바스크립트에서 Object는 참조형이기 때문이다. Object 값은 heap에 저장되어 있지만 해당 값을 가리키는 jamesOrder, chrisOrder 참조변수는 stack에 저장되어 있다. 이 변수들 안에는 heap에 위치한 object를 가리키는 포인터들이 있다. jamesOrder의 포인터와 chrisOrder의 포인터가 가리키는 object는 같다. 이러한 이유로 Object의 값을 바꾼다면 같은 주소를 들고있는 두 참조변수 jamesOrderd와 chrisOrder는 함께 영향을 받게된다.
 
 <div style="width:50%;height:50%;padding-bottom:30%;position:relative;"><iframe src="https://giphy.com/embed/KDsRUPvh7xkY0ZfDYy" width="100%" height="100%" style="position:absolute" frameBorder="0" allowFullScreen></iframe></div></a></p>
+
 
 ## Reference
 - <a href="https://www.amazon.com/Understanding-Using-Pointers-Techniques-Management/dp/1449344186/ref=sr_1_1?crid=J4ASWRR1M98U&keywords=understanding+and+using+c+pointers&qid=1558195869&s=gateway&sprefix=understanding+and+using+c+po%2Caps%2C348&sr=8-1"  target="_blank">[Book] Understanding and Using C Pointer</a>
