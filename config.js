@@ -5,9 +5,9 @@ module.exports = {
   title: 'Blog by Baby Tiger',
   subtitle: 'Developer Blog',
   copyright: 'Copyright © 2019 Baby Tiger. All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'babytiger',
   postsPerPage: 4,
-  googleAnalyticsId: '#',
+  googleAnalyticsId: 'UA-140385210-1',
   menu: [
     {
       label: 'Articles',
