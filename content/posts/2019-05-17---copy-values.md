@@ -92,11 +92,11 @@ Chris와 James 두 친구가 점심을 먹기위해 In N Out에 갔다. chrisOrd
 
 이런 결과가 발생한 이유는 자바스크립트에서 Object는 참조형이기 때문이다. Object 값은 heap에 저장되어 있지만 해당 값을 가리키는 jamesOrder, chrisOrder 참조변수는 stack에 저장되어 있다. 이 변수들 안에는 heap에 위치한 object를 가리키는 포인터들이 있다. jamesOrder의 포인터와 chrisOrder의 포인터가 가리키는 object는 같다. 이러한 이유로 Object의 값을 바꾼다면 같은 주소를 들고있는 두 참조변수 jamesOrderd와 chrisOrder는 함께 영향을 받게된다.
 
-<div style="width:50%;height:50%;padding-bottom:30%;position:relative;"><iframe src="https://giphy.com/embed/KDsRUPvh7xkY0ZfDYy" width="100%" height="100%" style="position:absolute" frameBorder="0" allowFullScreen></iframe></div></a></p>
+<div style="width:50%;height:50%;padding-bottom:20%;position:relative;"><iframe src="https://giphy.com/embed/KDsRUPvh7xkY0ZfDYy" width="100%" height="100%" style="position:absolute" frameBorder="0" allowFullScreen></iframe></div></a></p>
 
 
 ## Reference
-- <a href="https://www.amazon.com/Understanding-Using-Pointers-Techniques-Management/dp/1449344186/ref=sr_1_1?crid=J4ASWRR1M98U&keywords=understanding+and+using+c+pointers&qid=1558195869&s=gateway&sprefix=understanding+and+using+c+po%2Caps%2C348&sr=8-1"  target="_blank">[Book] Understanding and Using C Pointer</a>
+- <a href="https://www.amazon.com/Understanding-Using-Pointers-Techniques-Management/dp/1449344186/ref=sr_1_1?crid=J4ASWRR1M98U&keywords=understanding+and+using+c+pointers&qid=1558195869&s=gateway&sprefix=understanding+and+using+c+po%2Caps%2C348&sr=8-1"  target="_blank">[Text] Understanding and Using C Pointer</a>
 - <a href="https://hackernoon.com/javascript-reference-and-copy-variables-b0103074fdf0" target="_blank">[Text] JavaScript Reference and Copy Variables</a>
 - <a href=http://cslibrary.stanford.edu/102/PointersAndMemory.pdf target="_blank">[Text] Pointers and Memory</a>
 - <a href="https://www.youtube.com/watch?v=IX3fDYz0WyM" target="_blank">[Video] Stack Versus Heap</a>
