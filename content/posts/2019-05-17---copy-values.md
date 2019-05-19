@@ -105,10 +105,11 @@ Chris와 James 두 친구가 점심을 먹기위해 In N Out에 갔다. chrisOrd
 <script>
 
 
-
+<div id="disqus_thread"></div>
+<script>
 var disqus_config = function () {
 this.page.url = https://babytiger.netlify.com/posts/copy-values/; 
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.identifier = copyValues; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
 
 (function() { // DON'T EDIT BELOW THIS LINE
