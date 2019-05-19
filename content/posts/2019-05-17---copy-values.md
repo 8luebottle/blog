@@ -101,3 +101,22 @@ Chris와 James 두 친구가 점심을 먹기위해 In N Out에 갔다. chrisOrd
 - <a href=http://cslibrary.stanford.edu/102/PointersAndMemory.pdf target="_blank">[Text] Pointers and Memory</a>
 - <a href="https://www.youtube.com/watch?v=IX3fDYz0WyM" target="_blank">[Video] Stack Versus Heap</a>
 
+<div id="disqus_thread"></div>
+<script>
+
+
+
+var disqus_config = function () {
+this.page.url = https://babytiger.netlify.com/posts/copy-values/; 
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://babytiger.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            
