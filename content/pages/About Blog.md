@@ -12,6 +12,6 @@ slug: "/About Blog/"
         <li><b>Think</b> 개인적인 생각의 기록</li>
         <li><b>Translate</b> 좋은 기술 글 번역</li>
     </ol>
-    <p style="margin-left: 25px; font-size: 15px; color: green">// 개인발전에 도움될 오타 및 틀린부분에 관련된 댓글은 대환영입니다!<br>// 방문해 주셔서 감사합니다~ :^) </p>
+    <p style="margin-left: 25px; font-size: 13px; color: green">// 개인발전에 도움될 오타 및 틀린부분에 관련된 댓글은 대환영입니다!<br>// 방문해 주셔서 감사합니다~ :^) </p>
     </div>
 </body>
