@@ -1,6 +1,6 @@
 ---
 title: 후회하지 않는 선택을 하는 법
-date: "2019-05-24T23:52:43.121Z"
+date: "2019-05-24T11:11:11.121Z"
 template: "post"
 draft: false
 slug: "/posts/think-choice/"
