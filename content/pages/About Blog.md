@@ -15,4 +15,3 @@ slug: "/About Blog/"
     <p style="margin-left: 25px; font-size: 13px; color: green">// 오타 및 틀린부분에 관련된 댓글도 대환영입니다!<br>// 방문해 주셔서 감사합니다~ :^) </p>
     </div>
 </body>
-

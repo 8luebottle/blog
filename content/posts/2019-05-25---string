@@ -1,0 +1,37 @@
+---
+title: string
+date: "2019-05-25T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/string/"
+category: "JavaScript"
+tags:
+  - "Java Script"
+  - "TIL"
+  - "string"
+  - "Method"
+  - "concat"
+
+description: ""
+---
+<head>
+<style>
+code {
+  background-color: #ececec
+}
+</style>
+</head>
+
+##concat
+![concat.png](/media/concat.png)
+
+concat 메서드는 두개 이상의 문자열을 합칠때 사용한다.<br>
+<small>concat 은 concatenate의 줄임말이다. 사전적인 의미는 사슬같이 잇다, 연결하다라는 뜻이 있다. </small>
+
+
+<p style="margin-left:200px; margin-right:50px;">
+    <b>Sytax :</b> stringHead.concat(stringTail1, stringTail2....stringTailN) <br>
+    <b>Return value : </b> 새로운 문자열 <br>
+    <b>Affect original array : </b> No
+</p>
+<div class="colorscripter-code" style="color:#f0f0f0; font-size: 13px;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important; overflow:auto"><table class="colorscripter-code-table" style="margin:0; padding:0; border:none; background-color:#272727; border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px; border-right:2px solid #4f4f4f"><div style="margin:0; padding:0; word-break:normal; text-align:right; color:#aaa; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:130%"><div style="line-height:130%">1</div><div style="line-height:130%">2</div><div style="line-height:130%">3</div><div style="line-height:130%">4</div><div style="line-height:130%">5</div><div style="line-height:130%">6</div></div></td><td style="padding:6px 0"><div style="margin:0; padding:0; color:#f0f0f0; font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">var</span>&nbsp;stringHead&nbsp;<span style="color:#0086b3"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#ffd500">'Great'</span>;</div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">var</span>&nbsp;stringTail1&nbsp;<span style="color:#0086b3"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#ffd500">'&nbsp;Nation'</span>;</div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">var</span>&nbsp;stringTail2&nbsp;<span style="color:#0086b3"></span><span style="color:#ff3399">=</span>&nbsp;<span style="color:#ffd500">'&nbsp;South&nbsp;Korea'</span>;</div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">var</span>&nbsp;connectedString&nbsp;<span style="color:#0086b3"></span><span style="color:#ff3399">=</span>&nbsp;stringHead.concat(stringTail1,&nbsp;stringTail2);</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#4be6fa">console</span>.log(connectedString);&nbsp;<span style="color:#999999">//&nbsp;"Great&nbsp;Nation&nbsp;South&nbsp;Korea"</span></div></div></td><td style="vertical-align:bottom; padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none; color:white"><span style="font-size:9px; word-break:normal; background-color:#4f4f4f; color:white; border-radius:10px; padding:1px">cs</span></a></td></tr></table></div>
