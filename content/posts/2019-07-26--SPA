@@ -1,0 +1,54 @@
+---
+title: SPA vs. MPA
+date: "2019-07-26T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/SPA/"
+category: "ReactJS"
+tags:
+  - "ReactJS"
+  - "SPA"
+  - "MPA"
+  - "Web App"
+
+description: "Web App을 만드는 두 가지 패턴으로는 SPA와 MPA로 나뉜다. 이 둘의 차이점은 무엇이고 언제 어떤것을 사용해야 하는지에 대해 알아보자."
+---
+<head>
+<style>
+code {
+  background-color: #ececec
+}
+#rcorners {
+  border-radius: 25px;
+  border: 2px solid #dd4ecf;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+</style>
+</head>
+
+![scope.png](/media/scope.png)
+
+사람들이 웹앱을 즐겨 사용하는 이유는 모바일 앱처럼 따로 다운받아 사용 할 필요가 없기 때문이다. 인터넷을 사용할 수 있는 장비라면 어디서든 웹앱을 사용 가능하다는 편리성도 한 몫 한다.
+
+웹앱을 만들기 위해 SPA 패턴을 사용할 것인지 MPA 패턴을 사용할 것인지 결정을 해야한다. 이 둘의 차이와 장단점을 알아보고 자신이 만들 웹앱에 맞는 패턴을 사용해보자.
+
+
+##SPA
+SPA : Single Page Application
+
+##MPA
+MPA : Multi Page Application
+
+|   |<h4>SPA</h4>|<h4>MPA</h4>|
+|---|---|---|
+||**S**ingle **P**age **A**pplication|**M**ulti **P**age **A**pplication|
+|<h4>**장점**</h4>| You Can Also| Put Pipes In |
+|**단점**| | |
+
+|      	|           SPA           	|           MPA          	|
+|------	|:-----------------------:	|:----------------------:	|
+|      	| Single Page Application 	| Multi Page Application 	|
+| 장점 	|                         	|                        	|
+| 단점 	|                         	|                        	|
