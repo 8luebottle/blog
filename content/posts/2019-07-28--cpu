@@ -1,0 +1,67 @@
+---
+title: CPU
+date: "2019-07-28T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/cpu/"
+category: "Computer Architecture"
+tags:
+  - "Computer Architecture"
+
+description: "CPU에 대하여 알아보자"
+---
+<head>
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+<style>
+  code {
+    background-color: #ececec
+  }
+  p {
+    font-size: 17px;
+  }
+  li {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  sub{
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 20px;
+    color: #2680d9;
+  }
+  sub2{
+    font-size: 15px;
+    vertical-align: middle;
+    padding: 20px;
+    color: #d926d9;
+  }
+  br{
+    line-height: 35px;
+  }
+  small{
+    color: #808080;
+  }
+  #rcorners {
+    border-radius: 25px;
+    border: 2px solid #dd4ecf;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  .rdimg {
+    border-radius: 25px;
+  }
+</style>
+</head>
+
+<div style="font-family:Sunflower;">
+<br>
+<img src="/media/cpu.jpg" alt="CPU" class=rdimg>
+<h2>About CPU</h2>
+  <p></p>
+
+
+<h2>Reference</h2>
+
+
+</div>
