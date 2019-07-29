@@ -113,8 +113,12 @@ description: "HTML의 기초와 Semantic Element를 잘 사용하는 것이 왜 
     <li>관리</li>
     협업이 필수인 프로그래밍 분야에서는 관리하기 좋은 코드를 잘 짤 줄 알아야 한다. 알아보기 좋은 코드는 타 개발자에게도 이득이지만 시간이 한참 흐른후 희미해진 기억을 가진 미래의 자신에게도 충분히 플러스 요소가 된다.
   </ol>
-
   </p>
-
+  <h2>Reference</h2>
+  <p>
+  <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">HTML5 Semantic Elements</a><br>
+  <a href="http://seekbrevity.com/semantic-markup-important-web-design/" target="_blank">SEMANTIC HTML FOR MEANINGFUL WEBPAGES</a><br>
+  <a href="https://developer.mozilla.org/en-US/docs/Glossary/Empty_element" target="_blank">Empty Elements</a><br>
+  </p>
   </div>
 </body>
