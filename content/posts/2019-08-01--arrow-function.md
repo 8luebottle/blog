@@ -9,8 +9,7 @@ tags:
   - "TIL"
   - "ES6"
   - "Arrow function"
-
-description: "-"
+description: "ES6에서 등장한 화살표 함수는 어떠한 특징이 있기에 개발자들이 애용하는 것일까?"
 ---
 <head>
 <style>
@@ -189,6 +188,5 @@ description: "-"
   <h4>When you should not use</h4>
   <p>
     -
-  </p>
-  <h2>Reference</h2> -->
+  </p>-->
 </body>
