@@ -7,6 +7,7 @@ slug: "/posts/arrow-function/"
 category: "ES6"
 tags:
   - "TIL"
+  - "Java Script"
   - "ES6"
   - "Arrow function"
 
@@ -71,9 +72,8 @@ description: "ES6에서 등장한 화살표 함수는 어떠한 특징이 있기
   <img src="/media/arrow.jpg" alt="Arrow Function" height="300" class=rdimg vspace= "10">
   <small><center>Arrow by. Paweł Czerwiński</center></small>
   <div style="font-family:Sunflower;">
-</body>
   <p>
-    <center>화살표 함수의 특징과 장점, 그리고 언제 사용하는 것이 좋은지에 대해여 알아보자</center>
+    <center>화살표 함수의 특징과 장점, 그리고 언제 사용하는 것이 좋은지에 대하여 알아보자</center>
   </p>
   <center><sub>화살표함수에 대해 이해하기 위해서는 최소 this, scope, 그리고 익명함수에 관한 개념을 알고 있어야 한다.</sub></center>
   <h2>ES6 : Arrow Function</h2>
