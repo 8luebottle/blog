@@ -90,6 +90,8 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
   <img src="/media/mediaQuery.jpg" alt="Media Query" class=rdimg width="450" vspace= "15">
   <div style="font-family:Sunflower;">
   <h2>About Media Query</h2>
+  <img src="/media/mediaQ.png" alt="Media Query Main" class=rdimg width="450" vspace= "15">
+  <small><center>Image Source : internetingishard.com</center></small><br>
   <p>
     반응형 웹사이트 구현시 빠지지 않고 사용하는 것이 미디어 쿼리이다. 반응형 웹은 기존의 정적인 페이지에서 벗어나 화면이 동적으로 변화 할수 있는 웹을 말한다. 반응형 웹을 구현하기 위해 사용하는 미디어 쿼리는 다양한 디바이스 화면 규격에 맞는 해상도 분기점을 제공한다. 핸드폰 해상도와 타블렛 그리고 와이드 모니터의 해상도는 제각각이다. 유저가 어떠한 디바이스를 사용하는지는 우리가 예상 할 수 없기 때문에 다양한 단말기를 염두에 두고 화면 구성을 해야 한다. 미디어쿼리는 화면 넓이가 어떤 사이즈이던지 아름답게 보이도록 도와준다. 미디어 쿼리를 사용함으로 인해 사용자 친화적인 화면구성이 가능해진다.<br><br>
     <b>Ethan Marcotte</b><br>
@@ -132,7 +134,7 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
       <li><b>projection : </b>프로젝터</li>
       <li><b>screen : </b>스크린</li>
         <sub>컴퓨터, 스마트폰, 태블릿을 모두 지원하고자 한다면 handheld가 아닌 screen 사용</sub>
-      <li><b>speech : </b>낭독기</li>
+      <li><b>speech : </b>음성 합성장치 대상</li>
         <sub>페이지를 음성으로 읽어주는 기능</sub>
       <li><b>tty : </b>tty 미디어 유형</li>
         <sub>Teletype의 줄임말</sub><br>
@@ -142,6 +144,60 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
         <sub>음성 + 영상이 함께 지원되는 장치를 뜻함</sub>
     </ul>
   </p>
+  <h4>Media Features</h4>
+    <p>
+      미디어 특성을 통하여 출력장치와 환경등에 관한 설정을 해 줄수 있다. 자신이 원하는 부분을 선택하여 적용시키면 된다.
+    </p>
+    <table>
+      <tr>
+        <td><b>Name</b></td>
+        <td><b>About</b></td>
+      </tr>
+      <tr>
+        <td>width</td>
+        <td>Viewport 너비</td>
+      </tr>
+      <tr>
+        <td>height</td>
+        <td>Viewport 높이</td>
+      </tr>
+      <tr>
+        <td>aspect-ratio</td>
+        <td>Viewport 가로세로비</td>
+      </tr>
+      <tr>
+        <td>Orientation</td>
+        <td>Viewport 방향</td>
+      </tr>
+      <tr>
+        <td>resolution</td>
+        <td>Output 장치 해상도</td>
+      </tr>
+      <tr>
+        <td>scan</td>
+        <td>Output 장치 스캔 방법</td>
+      </tr>
+      <tr>
+        <td>grid</td>
+        <td>격자 혹은 비트맵 중 output 장치가 사용하는 화면</td>
+      </tr>
+      <tr>
+        <td>display-mode</td>
+        <td>웹 앱 매니페스트의 display 항목이 정의한 app의 표시 모드</td>
+      </tr>
+      <tr>
+        <td>pointer</td>
+        <td>포인팅 장치가 주요 입력 수단인지 판별, 그리고 그 정확도</td>
+      </tr>
+      <tr>
+        <td>hover</td>
+        <td>주요 input 수단으로 요소 위에 hover가 가능한지의 여부</td>
+      </tr>
+      <tr>
+        <td>scripting</td>
+        <td>JavaScript등을 사용할 수 있는지의 여부</td>
+      </tr>
+    </table>
   <h4>@media</h4>
     <p>
     </p>
@@ -153,10 +209,10 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
     </p>
     <b>연산자</b><br>
     <p>
-      <b>and : </b>논리곱(AND) 연산자와 똑같은 기능을 수행. 두 개의 조건 모두 만족해야 함.<br>
-      <b>, :</b> 논리합(OR) 연산자와 똑같은 기능울 수행. 두 조건중 하나만 만족하면 됨.<br>
-      <b>not : </b> 논리 부정 연산자(Not)와 똑같은 기능을 수행. 조건을 부정시킴.<br>
-      <b>only : </b>유저의 브라우저가 미디어 쿼리라는 표준을 지원하지 않을 시 미디어쿼리를 인식하지 못하도록 함.<br>
+      <b>and &nbsp;</b>논리곱(AND) 연산자와 똑같은 기능을 수행. 두 개의 조건 모두 만족해야 함.<br>
+      <b>,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b> 논리합(OR) 연산자와 똑같은 기능을 수행. 두 조건중 하나만 만족하면 됨.<br>
+      <b>not &nbsp;</b> 논리 부정 연산자(Not)와 똑같은 기능을 수행. 조건을 부정시킴.<br>
+      <b>only  </b>유저의 브라우저가 미디어 쿼리라는 표준을 지원하지 않을 시 미디어쿼리를 인식하지 못하도록 함.<br>
       <sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;only를 사용하지 않는다고 해서 큰 문제는 없다. JavaScript 코드 작성시 개발자가 null을 사용하여 의도적으로 빈 객체라는 것을 표시하는 것과 같이 only를 사용하여 명시적인 표현을 해주면 좋다.</sub>
     </p>
   <h4>실행문</h4>
@@ -197,7 +253,22 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
     원하는 분기점을 나눈후 각각의 분기점별로 CSS를 적용해 줄 수 있다. 
     <!-- 분기하는 방법은 두 가지가 있다.  1, Markup 2, style tag 3, Css (@media) -->
   </p>
-
+  <h2> Mobile First & Desktop First </h2>
+    <p>
+      Default 화면 설정을 모바일 중심이나 데스크탑 중심으로 설정할 수 있다. 웹사이트의 콘텐츠에 따라 알맞은 방법을 선택 하면 된다. 적용시키기 위한 코드를 살펴보자.
+    </p>
+  <h4> Mobile First</h4>
+    <p>
+      작은 모바일 화면 크기를 디폴트 값으로 잡고자 할 때 사용한다.<br>
+      min-width의 값을 잡아준다.
+    </p>
+    <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none; background-color:#D3D3D3;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">html&nbsp;</span>{<span style="color:#0099cc">&nbsp;background&nbsp;</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;silver</span><span style="color:#ff3399">;</span><span style="color:#0066cc">&nbsp;</span>}<span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">@media&nbsp;</span>(<span style="color:#4DA51B">min-width</span><span style="color:#ff3399">:</span><span style="color:#4DA51B">&nbsp;600px</span>)<span style="color:#ff3399"></span>{<span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;html&nbsp;</span>{<span style="color:#0099cc">&nbsp;background</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;blue</span><span style="color:#ff3399">;</span><span style="color:#0066cc">&nbsp;</span>}<span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc"></span>}</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"></td></tr></table></div>
+  <h4> Dektop First</h4>
+    <p>
+      보통의 컴퓨터 모니터의 크기를 디폴트 값으로 잡고자 할때 사용.<br>
+      max-width의 값을 잡아준다.
+    </p>
+      <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none; background-color:#D3D3D3;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">html&nbsp;</span>{<span style="color:#0099cc">&nbsp;background&nbsp;</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;silver</span><span style="color:#ff3399">;</span><span style="color:#0066cc">&nbsp;</span>}<span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">@media&nbsp;</span>(<span style="color:#4DA51B">max-width</span><span style="color:#ff3399">:</span><span style="color:#4DA51B">&nbsp;600px</span>)<span style="color:#ff3399"></span>{<span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;html&nbsp;</span>{<span style="color:#0099cc">&nbsp;background</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;blue</span><span style="color:#ff3399">;</span><span style="color:#0066cc">&nbsp;</span>}<span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc"></span>}</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"></td></tr></table></div>
   <h2>반응형 디자인으로 구현한 웹</h2>
   <p>
     반응형으로 만든 웹사이트들이 어떤 모습을 갖추고 있는지 참고하실 수 있도록 사이트를 모아보았다. 원하는 사이트에 접속하여 개발자들이 반응형 웹을 어떻게 구현해 내었는지 둘러보자.
