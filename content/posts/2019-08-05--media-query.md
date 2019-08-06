@@ -198,9 +198,6 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
         <td>JavaScript등을 사용할 수 있는지의 여부</td>
       </tr>
     </table>
-  <h4>@media</h4>
-    <p>
-    </p>
   <h4>조건문</h4>
     <p>
       조건문이 true이면 실행문을 해석, false 이면 실행문을 해석하지 않는다. <br>
