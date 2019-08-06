@@ -10,6 +10,7 @@ tags:
   - "CSS"
   - "Media query"
   - "Responsive"
+  - "breakpoint"
 
 description: "반응형 웹디자인을 구현하기 위해 필수적으로 알아야 할 Media query에 대해 알아 보자"
 ---
@@ -91,20 +92,20 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
   <h2>About Media Query</h2>
   <p>
     반응형 웹사이트 구현시 빠지지 않고 사용하는 것이 미디어 쿼리이다. 반응형 웹은 기존의 정적인 페이지에서 벗어나 화면이 동적으로 변화 할수 있는 웹을 말한다. 반응형 웹을 구현하기 위해 사용하는 미디어 쿼리는 다양한 디바이스 화면 규격에 맞는 해상도 분기점을 제공한다. 핸드폰 해상도와 타블렛 그리고 와이드 모니터의 해상도는 제각각이다. 유저가 어떠한 디바이스를 사용하는지는 우리가 예상 할 수 없기 때문에 다양한 단말기를 염두에 두고 화면 구성을 해야 한다. 미디어쿼리는 화면 넓이가 어떤 사이즈이던지 아름답게 보이도록 도와준다. 미디어 쿼리를 사용함으로 인해 사용자 친화적인 화면구성이 가능해진다.<br><br>
-    <b>Ethan Marcrotte</b><br>
+    <b>Ethan Marcotte</b><br>
     <img src="/media/ethan.png" alt="Ethan" class=rdimg width="200" vspace= "15">
     <img src="/media/ethansBook.png" alt="Ethan" class=rdimg vspace= "15">
    반응형 web design은  Ethan Marcotte가 처음 사용한 개념이다. 웹 디자이너인 Ethan은 작가이기도 한데 유명한 저서로는 <a href="https://www.amazon.com/Responsive-Design-Brief-People-Websites/dp/098444257X/ref=sr_1_2?keywords=Responsive+Web+Design&qid=1565098961&s=gateway&sr=8-2" target="_blank">Responsive Web Design</a> 과 <a href="https://www.amazon.com/Responsive-Design-Principles-Ethan-Marcotte/dp/1937557332/ref=sr_1_1?keywords=Responsive+Design%3A+Patterns+and+Principles&qid=1565099059&s=gateway&sr=8-1" target="_blank">Responsive Design: Patterns and Principles</a>가 있다. 그가 만든 작품에 관해 보고싶다면 <a href="https://ethanmarcotte.com/work/" target="_blank">여기</a>를 클릭하자.
     <br><br>
     <b>반응형의 웹의 중요성</b><br>
-    Hosting Facts의 통계에 따르면, 2018년 한 해 전세계 인터넷 사용자의 수는 41억명이다. 이는 37억명이었던 2017년 인구의 10.8% 가 증가된 수치이다. 적지않은 사람들이 여러대의 디지털 기기<small>(tablet, smartphone, laptop etc)</small>를 소유하고 있다. 특히 모바일을 통한 웹리소스 소비가 두드러진다. 가까운 나라 중국의 경우<small>(Image 01 참고)</small>, 98%에 달하는 인터넷 사용이 모바일을 통해 이루어지고 있다. 모바일을 통한 글로벌 인터넷 사용률<small>(Image 02 참고)</small>도 2017년부터 이미 절반을 넘어섰다.
+    Hosting Facts의 통계에 따르면, 2018년 한 해 전세계 인터넷 사용자의 수는 41억명이다. 이는 37억명이었던 2017년 인구의 10.8% 가 증가된 수치이다. 적지않은 사람들이 개인당 여러대의 디지털 기기<small>(tablet, smartphone, laptop etc)</small>를 소유하고 있다. 특히 모바일을 통한 웹리소스 소비가 두드러진다. 가까운 나라 중국의 경우<small>(Image 01 참고)</small>, 98%에 달하는 인터넷 사용이 모바일을 통해 이루어지고 있다. 모바일을 통한 글로벌 인터넷 사용률<small>(Image 02 참고)</small>도 2017년부터 이미 절반을 넘어섰다.
     <img src="/media/98percentChineseMobileUser.jpg" alt="Chinese Mobile User" class="rdimg" vspace="10px">
     <small><center>Image 01 : Chinese</center></small><br>
     <img src="/media/globalMobileTraffic.png" alt="Global Mobile Traffic" class="rdimg" vspace="10px">
     <small><center>Image 02 : Global</center></small><br>
   <p>
     2007년 스마트폰<small>(최초의 스마트폰은 이보다 15년 앞서 등장했다)</small>의 대중화의 성공으로 인하여 모바일로 언제 어디서나 인터넷을 접속하는 유저가 기하급수적으로 증가하였다. 이러한 시대의 흐름에 부합할 수 있는 반응형 웹을 구현해 낼 수 있어야 한다. 화면이 줄어들거나 늘어나더라도 화면이 뭉개지지 않도록 미디어 쿼리의 힘을 빌려보자.<br><br>
-    <sub>* 세계 최초의 스마트폰은 1992년 IBM 이 'Simon'이란 이름으로 출시한 스마트폰이다. Simon은 계산기, 메모장, 스케치패드, 이메일기능등을 지닌 혁신적인 기기였다. 하지만 당시 $899( 2019년 8월 현 시세 $1,641 )이라는 적지 않은 금액, 1시간남짓한 베터리 수명등과 같은 단점으로 인해 대중화되지는 않았다*</sub>
+    <sub>* 세계 최초의 스마트폰은 1992년 IBM 이 'Simon'이란 이름으로 출시한 스마트폰이다. Simon은 계산기, 메모장, 스케치패드, 이메일기능등을 지닌 혁신적인 기기였다. 하지만 당시 $899( 2019년 8월 현 시세 $1,641 )이라는 적지 않은 금액, 1시간남짓한 베터리 수명등과 같은 단점으로 인해 대중화되지는 못했다*</sub>
   </p>
   <h2>미디어 쿼리의 구조</h2>
   <p>
@@ -113,33 +114,50 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
     <div class="colorscripter-code" style="color:white;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#white;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;@media&nbsp;only&nbsp;screen&nbsp;and&nbsp;</span>(<span style="color:#4DA51B">min-width</span><span style="color:#ff3399">:</span><span style="color:#4DA51B">&nbsp;600px</span>)<span style="color:#ff3399"></span>{<span style="color:#ff3399"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#ff3399">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body&nbsp;</span>{<span style="color:#0099cc">&nbsp;background-color</span><span style="color:#ff3399">:</span><span style="color:#0066cc">&nbsp;green</span><span style="color:#ff3399">;</span><span style="color:#0066cc">&nbsp;</span>}<span style="color:#0066cc"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0066cc">&nbsp;&nbsp;&nbsp;&nbsp;</span>}</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;margin-bottom:10px;font-size:9px;font-style:italic"></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"></td></tr></table></div>
   </p>
   <p>
-    Stylesheet에서 미디어 쿼리는 늘 <code>@media</code>로 시작한다. 미디어쿼리를 정의하는 단계라고 보면 된다. 그 다음은 '미디어 타입'이 무엇인지가 오게된다. 여기서는 <code>screen</code>으로 작성되었다. <code>only</code> 키워드는 선택사항이다. 이 키워드가 추가되었을시 미디어쿼리를 지원하는 웹 브라우저에서만 미디어 쿼리를 실행하도록 만든다. 즉, 미디어쿼리를 지원하지 않는 브라우저일시 해당 코드는 무시된다. <code>and</code>논리 AND연산을 수행한다. <code>(괄호 안)</code>은 조건문을 적는 공간으로써 CSS처럼 <code> :</code> 연산자를 사용한다. <code>{중괄호 안}</code>은 실행문이 들어가는 공간으로써 CSS 코드를 이 안에 작성하게 된다. 조건문이 '참' 일 시에만 실행문의 문장들을 해석하게 된다.
-    <img src="/media/mq-syntax.png" alt="Syntax of Media query" class="rdimg" vspace="10px" width="400px"><br>
-    예시문의 해석은 끝났으니 종류별로 자세히 알아보도록 하겠다.
+    Stylesheet에서 미디어 쿼리는 늘 <code>@media</code>로 시작한다. 미디어쿼리를 정의하는 단계라고 보면 된다. 그 다음은 '미디어 타입'이 무엇인지가 오게된다. 여기서는 <code>screen</code>으로 작성되었다. <code>only</code> 키워드는 선택사항이다. 이 키워드가 추가되었을시 미디어쿼리를 지원하는 웹 브라우저에서만 미디어 쿼리를 실행하도록 만든다. 즉, 미디어쿼리를 지원하지 않는 브라우저일 시 해당 코드는 무시된다. <code>and</code>논리 AND연산을 수행한다. <code>(괄호 안)</code>은 조건문을 적는 공간으로써 CSS처럼 <code> :</code> 연산자를 사용한다. <code>{중괄호 안}</code>은 실행문이 들어가는 공간으로써 CSS 코드를 이 안에 작성하게 된다. 조건문이 '참' 일 시에만 실행문의 문장들을 해석하게 된다.<br><br>
+    예시문을 통해 전체적인 구조에 관한 감은 잡았으니 이제부터는 문법을 좀 더 자세히 알아보도록 하겠다.
+    <img src="/media/mq-syntax.png" alt="Syntax of Media query" class="rdimg" vspace="10px" width="400px">
+
   </p>
   <h4>Media Type</h4>
    <p>
-    미디어 타입은 case sensitive 이기 때문에 작성시 대소문자를 유의하여 써주어야 한다. 보통의 경우 all, print, screen을 사용한다.
+    미디어 타입은 case sensitive 이기 때문에 작성시 대소문자를 유의하여 써주어야 한다. 많이 사용하는 유형은 all, print, screen 이다.
     <ul>
       <li><b>all : </b>모든 디바이스 지원</li>
-      <li><b>aural : </b>음성 장치</li>
-      <li><b>braille : </b>점자 장치</li>
+      <li><b>aural : </b>음성 합성 장치</li>
+      <li><b>braille : </b>점자 표시 장치</li>
       <li><b>embossed : </b>페이지에 프린트된 점자 장치</li>
       <li><b>handheld : </b>휴대용 작은 스크린</li>
       <li><b>print : </b>인쇄</li>
       <li><b>projection : </b>프로젝터</li>
+      <li><b>screen : </b>스크린</li>
+        <sub>컴퓨터, 스마트폰, 태블릿을 모두 지원하고자 한다면 handheld가 아닌 screen 사용</sub>
+      <li><b>speech : </b>낭독기</li>
+        <sub>페이지를 음성으로 읽어주는 기능</sub>
       <li><b>tty : </b>tty 미디어 유형</li>
-        <sub>디스플레이 능력이 한정적인 텔렉스, 터미널 등과 같은 장치</sub><br>
-        <sub>px 단위 사용 불가</sub>
+        <sub>Teletype의 줄임말</sub><br>
+        <sub>pixel 단위 사용 불가</sub><br>
+        <sub>디스플레이 능력이 한정적인 텔렉스, 터미널 등과 같은 장치</sub>
       <li><b>tv : </b>티비유형 디바이스</li>
-        <sub>음성 + 영상이 함께 지원되는 장치를 뜻함.</sub>
+        <sub>음성 + 영상이 함께 지원되는 장치를 뜻함</sub>
     </ul>
   </p>
+  <h4>@media</h4>
+    <p>
+    </p>
   <h4>조건문</h4>
     <p>
       조건문이 true이면 실행문을 해석, false 이면 실행문을 해석하지 않는다. <br>
       <code>and</code>키워드나 <code>,</code>를 사용하여 두개 이상의 조건문 작성이 가능하다.<br>
       조건문이라고해서 보통의 조건문의 연산자를 모두 사용 가능한 것은 아니다. <code>&lt;</code>, <code>&gt;</code>, <code>=</code>와 같은 연산자는 지원하지 않는다. 최소값, 최대값을 비교하고자 할 때는 <code>min-</code> 나 <code>max-</code> 를 이용한다.
+    </p>
+    <b>연산자</b><br>
+    <p>
+      <b>and : </b>논리곱(AND) 연산자와 똑같은 기능을 수행. 두 개의 조건 모두 만족해야 함.<br>
+      <b>, :</b> 논리합(OR) 연산자와 똑같은 기능울 수행. 두 조건중 하나만 만족하면 됨.<br>
+      <b>not : </b> 논리 부정 연산자(Not)와 똑같은 기능을 수행. 조건을 부정시킴.<br>
+      <b>only : </b>유저의 브라우저가 미디어 쿼리라는 표준을 지원하지 않을 시 미디어쿼리를 인식하지 못하도록 함.<br>
+      <sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;only를 사용하지 않는다고 해서 큰 문제는 없다. JavaScript 코드 작성시 개발자가 null을 사용하여 의도적으로 빈 객체라는 것을 표시하는 것과 같이 only를 사용하여 명시적인 표현을 해주면 좋다.</sub>
     </p>
   <h4>실행문</h4>
     <p>
