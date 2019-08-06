@@ -272,7 +272,7 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
     <ol>
       <li><a href="https://www.yale.edu/" target="_blank">Yale University</a></li>
       <li><a href="https://www.cornell.edu/" target="_blank">Cornell University</a></li>
-      <li><a href="http://web.mit.edu/" target="_blank">Cornell University</a></li>
+      <li><a href="http://web.mit.edu/" target="_blank">MIT</a></li>
       <li><a href="https://monese.com/" target="_blank">monese</a></li>
       <li><a href="https://transferwise.com/" target="_blank">TransferWise</a></li> 
       <li><a href="https://www.coinbase.com/" target="_blank">coinbase</a></li> 
