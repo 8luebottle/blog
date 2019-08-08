@@ -119,7 +119,6 @@ description: "반응형 웹디자인을 구현하기 위해 필수적으로 알�
     Stylesheet에서 미디어 쿼리는 늘 <code>@media</code>로 시작한다. 미디어쿼리를 정의하는 단계라고 보면 된다. 그 다음은 '미디어 타입'이 무엇인지가 오게된다. 여기서는 <code>screen</code>으로 작성되었다. <code>only</code> 키워드는 선택사항이다. 이 키워드가 추가되었을시 미디어쿼리를 지원하는 웹 브라우저에서만 미디어 쿼리를 실행하도록 만든다. 즉, 미디어쿼리를 지원하지 않는 브라우저일 시 해당 코드는 무시된다. <code>and</code>논리 AND연산을 수행한다. <code>(괄호 안)</code>은 조건문을 적는 공간으로써 CSS처럼 <code> :</code> 연산자를 사용한다. <code>{중괄호 안}</code>은 실행문이 들어가는 공간으로써 CSS 코드를 이 안에 작성하게 된다. 조건문이 '참' 일 시에만 실행문의 문장들을 해석하게 된다.<br><br>
     예시문을 통해 전체적인 구조에 관한 감은 잡았으니 이제부터는 문법을 좀 더 자세히 알아보도록 하겠다.
     <img src="/media/mq-syntax.png" alt="Syntax of Media query" class="rdimg" vspace="10px" width="400px">
-
   </p>
   <h4>Media Type</h4>
    <p>
