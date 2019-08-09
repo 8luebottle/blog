@@ -145,26 +145,37 @@ target="_blank">Happy dog</a></center>
   <p>
     보다시피 rel 속성을 붙여준것을 알 수 있다. 
   </p>
-      <center><code>rel="noopener noreferrer"</code></center><br>
+    <center><code>rel="noopener noreferrer"</code></center><br>
   <p>
-    오래전에 발견된 이 피싱공격에 대해 Google, Facebook, Twitter와 같은 해외의 기업들은 tabnabbing에 대한 대응을 잘 하고 있다. 하지만 9년이 지난 현재까도 국내의 유명 포털사이트들의 소스코드를 열어본다면 이 위험에 대해 예방해 놓지 않고 있다는 것을 알 수 있다.
+    오래전에 발견된 이 피싱공격에 대해 Google, Facebook, Twitter와 같은 해외의 기업들은 tabnabbing에 대한 대응을 잘 하고 있다. 하지만 9년이 지난 현재까도 국내의 유명 포털사이트들의 소스코드를 열어본다면 이 위험에 대해 예방해 놓지 않고 있다는 것을 알 수 있다.<br>
+    <sub> *이 기능을 알면서도 SEO 순위를 우려하여 사용하지 않는 개발자들도 있다. 하지만  <code>rel="noopener"</code>을 사용하더라도 SEO에 대한 영향을 주지는 않으니 안전성을 위해 사용하도록 하자!! &nbsp;&nbsp;&nbsp;SEO와 효율성에 관한 글은 <a href="https://searchenginelaws.com/seo/what-is-rel-noopener-noreferrer-tag/" target="_blank" rel="noopener noreferrel">여기서</a> 읽어보길</sub>
   </p>
     <img src="/media/tabnabbingFacebook.png" alt="Facebook and Tabnabbing" class="rdimg" vspace= "30">
     <small><center>Pixar의 Facebook 페이지 소스코드</center></small><br>
-    <img src="/media/singleNmultiProcess.png" alt="Single Process Multi Process" class="rdimg" vspace= "30">
-  <p>
+    <!-- <img src="/media/singleNmultiProcess.png" alt="Single Process Multi Process" class="rdimg" vspace= "30"> -->
+  <!-- <p>
     대부분의 브라우저는 멀티프로세스 방식으로 작동한다. 탭 마다 프로세스를 실행한다. 그로인해 메모리는 많이 차지하지만 안정성과 속도<small>(응답시간 86% 단축)</small>는 향상된다. <br>
     <br>
     <sub>* 다중 프로세스 지원이 안되던 Firefox도 뒤늦게(2016-03-08) 멀티프로세스를 지원(Firefox 48 정식판 부터)하기 시작했다. 전기분해의 의미를 지닌 <a href="https://wiki.mozilla.org/Electrolysis" target="_blank" rel="noopener noreferrer">Electrolysis</a> 프로젝트를 통해 싱글프로세스 방식을 유지하던 Firefox가 다중프로세스 방식으로 변경. 그로인해 브라우저 잦았던 UI 버튼 먹통의 현상을 해결하였다.</sub><br>
-    <br>
+    <br> -->
     <!-- rel="noopener" 의 속성은 새 페이지에서 열린 
     rel=”noopener” attribute protects the new page to be accessed by the window.opener property and make sure it runs in a separate process.
     rel=”noreferrer” attribute has a similar quality, but it also prevents passing on the referrer information to the new page. -->
-    <sub> *이 기능을 알면서도 SEO 순위를 우려하여 사용하지 않는 개발자들도 있다. 하지만  <code>rel="noopener"</code>을 사용하더라도 SEO에 대한 영향을 주지는 않으니 안전성을 위해 사용하도록 하자! SEO와 효율성에 관한 글은 <a href="https://searchenginelaws.com/seo/what-is-rel-noopener-noreferrer-tag/" target="_blank" rel="noopener noreferrel">여기서</a> 읽어보길</sub>
   </p>
-  <!-- <p>
-    그렇다면 이번에는 브라우저 콘솔창에서 rel 속성을 사용한것과 그렇지 않았을때의 차이점을 비교해보도록 하자. 
-  </p> -->
+  <p>
+    <b>예방된 사이트와 그렇지 않은 사이트</b><br>
+    브라우저 콘솔창에서 rel 속성을 사용한것과 그렇지 않았을때의 차이점을 비교해보도록 하자. <br><br>
+    <b>첫번째 예</b>는 <code>rel="noopener noreferrer"</code> 속성을 주지 않은 case이다. '코스피' 라는 텍스트를 클릭하면 새 창으로 이동된다. 새롭게 열린 창에서 Developer console을 이용하여 <code>window.opener</code>에 접근 가능한지 시도해 보았다.
+    <img src="/media/tabnabbingDaum.gif" alt="Bad Case GIF" class="rdimg" vspace= "15">
+    <img src="/media/tabnabbingDaum.png" alt="Bad Case Image" class="rdimg" vspace= "15">
+    window.opener의 접근이 정말 잘 된다...해당 URL을 replace 하여 피싱 공격을 시도할 수 있다.<br><br>
+    <b>두번째 예</b>는 예방을 잘 해놓은 case이다. 첫번째 case 처럼 <code>window.opener</code>에 접근 시도를 해 보았으나 <code>null</code>의 값이 찍히면서 접근이 막힌 것을 볼 수 있다.
+    <img src="/media/tabnabbingFacebook.gif" alt="Good Case GIF" class="rdimg" vspace= "15">
+    <img src="/media/tabnabbingFacebookImg.png" alt="Good Case Image" class="rdimg" vspace= "15">
+  </p><br>
+  <p>
+    <b>* 만약 새 창 띄우기를 한다면 <code>rel="noopener noreferrer"</code>을 이용하여 유저의 정보를 보호하기 위해 예상되는 tabnabbing의 위험성을 미리 예방해 놓도록 하자 *</b>
+  </p>
   <h2>Reference</h2>
   <p>
     <ul>
