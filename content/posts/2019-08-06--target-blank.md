@@ -134,19 +134,29 @@ target="_blank">Happy dog</a></center>
     <b>1. noopener | noreferrer 사용하기</b><br>
     noopener와 noreferrer 키워드를 이용함으로써 웹사이트의 보안성을 높여줄 수 있다.<br> 
     실제로 Facebook 과 Twitter는 위의 두 방법을 사용하고 있다.<br><br>
-    위에서 코드로 보았듯이, 해커는 window.opener로 접근하여 새창의 주소를 악성 사이트로 바꾸는 방법을 사용했다. 그렇다면 해커가 해당 속성에 접근하지 못하도록 설정을 해놓아 버리자. 이는 noopener 또는 noreferrer을 이용하여 window.opener가 가리키는 값을 null로 확정지어 버리면 된다. 코드는 <code>rel</code> 속성을 이용하여 작성해주면 된다.<br>
-    rel=”noopener” attribute protects the new page to be accessed by the window.opener property and make sure it runs in a separate process.
-    rel=”noreferrer” attribute has a similar quality, but it also prevents passing on the referrer information to the new page.
-    <center><code>rel="noopener"</code></center><br>
-    <sub> *이 기능을 알면서도 SEO 순위를 우려하여 사용하지 않는 개발자들도 있다. 하지만  <code>rel="noopener"</code>을 사용하더라도 SEO에 대한 영향을 주지는 않으니 안전성을 위해 사용하도록 하자! SEO와 효율성에 관한 글은 여기서 읽어보길</sub>
-  </p>
-  <p>
+    위에서 코드로 보았듯이, 해커는 window.opener로 접근하여 새창의 주소를 악성 사이트로 바꾸는 방법을 사용했다. 그렇다면 해커가 해당 속성에 접근하지 못하도록 설정을 해놓아 버리자. 이는 noopener 와 noreferrer을 이용하여 window.opener가 가리키는 값을 null로 확정지어 버리면 된다. 코드는 <code>rel</code> 속성을 이용하여 작성해주면 된다.
+    <br>
     위에서 보았던 보안이 취약한 코드를 고친다면 아래와 같다.
   </p>
   <div class="colorscripter-code" style="color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#fafafa;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #e5e5e5"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#666;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div><div style="line-height:130%"></div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#010101;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#010101">&lt;</span><span style="color:#066de2">a</span>&nbsp;<span style="color:#0a9989">href</span>=<span style="color:#df5000">"https://www.google.com/search?q=happy+dog&amp;source=lnms&amp;tbm=isch&amp;sa=</span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#df5000">X&amp;ved=0ahUKEwik9P7GmPLjAhWBHKYKHWvTDggQ_AUIECgB&amp;biw=740&amp;bih=665#imgrc=_"</span><span style="color:#0a9989"></span>&nbsp;<span style="color:#0a9989"></span></div><div style="padding:0 6px; white-space:pre; line-height:130%"><span style="color:#0a9989">target</span>=<span style="color:#df5000">"_blank"</span><span style="color:#0a9989"></span>&nbsp;<span style="color:#0a9989">rel</span>=<span style="color:#df5000">"noopener"</span><span style="color:#0a9989"></span><span style="color:#010101">&gt;</span>Happy&nbsp;dog<span style="color:#010101">&lt;</span><span style="color:#010101">/</span><span style="color:#066de2">a</span><span style="color:#010101">&gt;</span></div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;</div></div><div style="text-align:right;margin-top:-13px;margin-right:5px;font-size:9px;font-style:italic"><a href="http://colorscripter.com/info#e" target="_blank" style="color:#e5e5e5text-decoration:none"></a></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"><a href="http://colorscripter.com/info#e" target="_blank" style="text-decoration:none;color:white"><span style="font-size:9px;word-break:normal;background-color:#e5e5e5;color:white;border-radius:10px;padding:1px"></span></a></td></tr></table></div>
   <p>
-    <!-- 보다시피 rel 속성을 붙여준것을 알 수 있다. 그렇다면 이번에는 브라우저 콘솔창에서 rel 속성을 사용한것과 그렇지 않았을때의 차이점을 비교해보도록 하자.  -->
+    보다시피 rel 속성을 붙여준것을 알 수 있다. 
+  </p><br>
+    <img src="/media/singleNmultiProcess.png" alt="Single Process Multi Process" class="rdimg" vspace= "30">
+  <p>
+    대부분의 브라우저는 멀티프로세스 방식으로 작동한다. 탭 마다 프로세스를 실행한다. 그로인해 메모리는 많이 차지하지만 안정성과 속도는 향상된다. <br>
+    <br>
+    <sub>* 다중 프로세스 지원이 안되던 Firefox도 뒤늦게(2016-03-08) 멀티프로세스를 지원(Firefox 48 정식판 부터)하기 시작했다. 전기분해의 의미를 지닌 <a href="https://wiki.mozilla.org/Electrolysis" target="_blank" rel="noopener noreferrer">Electrolysis</a> 프로젝트를 통해 싱글프로세스 방식을 유지하던 Firefox가 다중프로세스 방식으로 변경. 그로인해 브라우저 잦았던 UI 버튼 먹통의 현상을 해결하였다.</sub><br>
+    <br>
+    <!-- rel="noopener" 의 속성은 새 페이지에서 열린 
+    rel=”noopener” attribute protects the new page to be accessed by the window.opener property and make sure it runs in a separate process.
+    rel=”noreferrer” attribute has a similar quality, but it also prevents passing on the referrer information to the new page. -->
+    <center><code>rel="noopener"</code></center><br>
+    <sub> *이 기능을 알면서도 SEO 순위를 우려하여 사용하지 않는 개발자들도 있다. 하지만  <code>rel="noopener"</code>을 사용하더라도 SEO에 대한 영향을 주지는 않으니 안전성을 위해 사용하도록 하자! SEO와 효율성에 관한 글은 <a href="https://searchenginelaws.com/seo/what-is-rel-noopener-noreferrer-tag/" target="_blank" rel="noopener noreferrel">여기서</a> 읽어보길</sub>
   </p>
+  <!-- <p>
+    그렇다면 이번에는 브라우저 콘솔창에서 rel 속성을 사용한것과 그렇지 않았을때의 차이점을 비교해보도록 하자. 
+  </p> -->
   <h2>Reference</h2>
   <p>
     <ul>
@@ -155,7 +165,11 @@ target="_blank">Happy dog</a></center>
       <li><a href="https://mathiasbynens.github.io/rel-noopener/" target="_blank" rel="noopener">About rel=noopener</a></li>
       <li><a href="https://developer.mozilla.org/ko/docs/Web/API/Window/opener" target="_blank" rel="noopener">Window.opener</a></li>
       <li><a href="https://caniuse.com/#feat=rel-noopener" target="_blank" rel="noopener">noopener and browser compatibility</a></li>
-      <li><a href="" target="_blank" rel="noopener">Reverse Tabnabbing</a></li>
+      <li><a href="" target="_blank" rel="noopener noreferrer">Reverse Tabnabbing</a></li>
+      <li><a href="https://developers.google.com/web/tools/lighthouse/audits/noopener?hl=ko" target="_blank" rel="noopener noreferrer">rel="noopener"을 사용하여 외부 앵커를 여는 사이트</li>
+      <li><a href="https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/" target="_blank" rel="noopener noreferrer">The performance benefits of rel=noopener</a></li>
+      <li><a href="https://arstechnica.com/information-technology/2017/06/firefox-multiple-content-processes/" target="_blank" rel="noopener noreferrer">Firefox 54 finally goes multiprocess, eight years after work began</a></li>
+      <li><a href="https://wiki.mozilla.org/Electrolysis" target="_blank" rel="noopener noreferrer">Electrolysis<a></li>
     </ul>
   </p>
 </body>
