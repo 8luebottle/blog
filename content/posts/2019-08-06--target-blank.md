@@ -148,7 +148,9 @@ target="_blank">Happy dog</a></center>
       <center><code>rel="noopener noreferrer"</code></center><br>
   <p>
     오래전에 발견된 이 피싱공격에 대해 Google, Facebook, Twitter와 같은 해외의 기업들은 tabnabbing에 대한 대응을 잘 하고 있다. 하지만 9년이 지난 현재까도 국내의 유명 포털사이트들의 소스코드를 열어본다면 이 위험에 대해 예방해 놓지 않고 있다는 것을 알 수 있다.
-  </p><br>
+  </p>
+    <img src="/media/tabnabbingFacebook.png" alt="Facebook and Tabnabbing" class="rdimg" vspace= "30">
+    <small><center>Pixar의 Facebook 페이지 소스코드</center></small><br>
     <img src="/media/singleNmultiProcess.png" alt="Single Process Multi Process" class="rdimg" vspace= "30">
   <p>
     대부분의 브라우저는 멀티프로세스 방식으로 작동한다. 탭 마다 프로세스를 실행한다. 그로인해 메모리는 많이 차지하지만 안정성과 속도<small>(응답시간 86% 단축)</small>는 향상된다. <br>
