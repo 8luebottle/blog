@@ -174,7 +174,7 @@ target="_blank">Happy dog</a></center>
     <img src="/media/tabnabbingFacebookImg.png" alt="Good Case Image" class="rdimg" vspace= "15">
   </p><br>
   <p>
-    <b>* 만약 새 창 띄우기를 한다면 <code>rel="noopener noreferrer"</code>을 이용하여 유저의 정보를 보호하기 위해 예상되는 tabnabbing의 위험성을 미리 예방해 놓도록 하자 *</b>
+    <b>* 만약 새 창 띄우기를 한다면 <code>rel="noopener noreferrer"</code>을 이용하여 유저의 정보를 보호하기 위해 예상되는 tabnabbing의 위험성을 미리 제거하도록 하자 *</b>
   </p>
   <h2>Reference</h2>
   <p>
