@@ -6,6 +6,7 @@ draft: false
 slug: "/posts/intro-linux/"
 category: "OS"
 tags:
+  - "TIL"
   - "Linux"
   - "Unix"
   - "GNU"
@@ -100,7 +101,7 @@ description: "리눅스의 뿌리는 유닉스에서 찾을 수 있다. 유닉�
 <img src="/media/linuxHistory.png" alt="Linux History" class="rdimg"  vspace="15px">
 <small><center><p style="padding-bottom: 15px; display:block; clear:both"> Image Source : digitalocean.com</center></small>
 <center font-size="13px">리눅스의 뿌리는 Unix로 부터 비롯되기에 <br>
-리눅스에 알아보기에 앞서 간단히 Unix에 대해서 알아보도록 하자.</center><br><br>
+리눅스를 알아보기에 앞서 간단히 Unix에 대해서 알아보도록 하자.</center><br><br>
 <p>
 아래 이미지는 UNIX의 계보(1969-2017)이다. 한 눈에 봐도 여러 갈래로 나뉘어 복잡한 것을 알 수 있다.<br>
   <img src="/media/unix-family.png" alt="UNIX Family" class="rdimg"  vspace="40px">
