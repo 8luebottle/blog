@@ -1,0 +1,103 @@
+---
+title: http
+date: "2019-08-09T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/http/"
+category: "HTML | CSS"
+tags:
+  - "TIL"
+  - "http"
+
+description: "-"
+---
+<head>
+<style>
+  code {
+    background-color: #ececec
+  }
+  p {
+    font-size: 15px;
+  }
+  tr{
+    text-align: right;
+  }
+  sub{
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 0px;
+    color: #2680d9;
+  }
+  li{
+    margin: 20px 0px;
+    /* list-style: none; */
+  }
+  strong{
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  small{
+    color: #808080;
+  }
+  #rcorners {
+    border-radius: 25px;
+    border: 2px solid #dd4ecf;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  .rdimg {
+    border-radius: 25px;
+  }
+  img{
+    margin-bottom: 10px;
+  }
+  ol, ul{
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .alignR{
+    text-align: left;
+  }
+  table{
+    font-size: 16px;
+  }
+  table {
+    width: 100%;
+  }
+  td, th{
+    border: 1px solid black;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+  }
+  tr:first-child{
+    background-color: #DCDCDC;
+  }
+  center {
+    line-height: 1.5;
+  }
+  a { 
+    text-decoration: none;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+<body>
+  <img src="/media/http.png" alt="HTTP" class=rdimg width="400" vspace= "15">
+  <div style="font-family:Sunflower;">
+    <h2>About HTTP</h2>
+    <p>
+      <b>HTTP : H</b>yper<b>T</b>ext <b>T</b>ransfer <b>P</b>rotocol<br>
+      client - server<br>
+      HTTP의 용어를 분석해보자면 HyperText들의 문서들을 주고받는데 사용되는 프로토콜이다. HTTP가 처음 만들어 졌을 때는 HTML만을 전송하고자 하였으나 시간이 흐르면서 다른 모든 종료의 리소스들을 전송할 수 있게 되었다.
+      <br>
+      <sub><b>* protocol: </b>컴퓨터와 컴퓨터가 정보를 주고 받을때 어떻게 소통할것인지에 대한 규칙과 약속을 뜻한다. 우리가 타인과 소통을 할 때 손을 흔들거나 악수를 하듯이 컴퓨터 또한 데이터를 주고 받을 때 어떠한 방법과 규칙을 따를 것인지를 정해 놓았다. 예) TCP/IP</sub>
+    </p>
+    <h2>Tim Berners-Lee</h2>
+    <p>
+    </p>
+    <h2>HTTP의 세가지 특징</h2>
+    <p>
+    </p>        
+  <div>
+</body>
