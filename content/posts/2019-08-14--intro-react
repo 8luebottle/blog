@@ -1,0 +1,117 @@
+---
+title: Intro to ReactJS
+date: "2019-08-14T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/intro-react/"
+category: "React"
+tags:
+  - "TIL"
+  - "ReactJS"
+  - "React"
+  - "ES6"
+  - "JavaScript"
+
+description: "-"
+---
+<head>
+<style>
+  code {
+    background-color: #ececec
+  }
+  p {
+    font-size: 15px;
+  }
+  tr{
+    text-align: right;
+  }
+  sub{
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 0px;
+    color: #2680d9;
+  }
+  li{
+    margin: 20px 0px;
+    /* list-style: none; */
+  }
+  strong{
+    font-size: 18px;
+    vertical-align: middle;
+  }
+  small{
+    color: #808080;
+  }
+  #rcorners {
+    border-radius: 25px;
+    border: 2px solid #dd4ecf;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
+  .rdimg {
+    border-radius: 25px;
+  }
+  img{
+    margin-bottom: 10px;
+  }
+  ol, ul{
+    line-height: 25px;
+  }
+  .alignR{
+    text-align: left;
+  }
+  table{
+    font-size: 16px;
+    width: 100%;
+  }
+  table, td, th, tr{
+    border: 1px solid #2680d9;
+    text-align: left;
+    font-size: 14px;
+    border-collapse: collapse;
+    padding: 15px;
+  }
+  tr:first-child{
+    background-color: #3BAFC9;
+    color: white;
+  }
+  center {
+    line-height: 1.5;
+  }
+  a { 
+    text-decoration: none;
+  }
+  .imageContainer {
+    float: left;
+  }
+  .card{
+    border: 1px dotted #2680d9;
+    color: #2680d9;
+    max-width: 380px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+<div style="font-family:Sunflower;">
+<img src="/media/reactjs.jpg" alt="ReactJS" class="rdimg"  vspace="5px">
+<small><center><p style="padding-bottom: 15px; display:block; clear:both"> Image Source : twinleo.com</center></small>
+<h2>About ReactJs</h2>
+<p>
+  리액트는 웹어플리케이션을 만들기 위한 자바스크립트 라이브러리이다. JavaScript언어를 통해 구현할 수 있는데 특히 ES6 문법에 대한 이해가 선행되어야 한다. 알고있으면 좋은 자바스크립트 지식으로는 아래와 같다. 아래의 리스트들을 이해하고 있다면 그렇지 않은 경우보다 리액트를 사용하기가 훨씬 수월할 것이다.
+</p>
+<h2>Reference</h2>
+<p>
+  <ul>
+    <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+    <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+    <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+    <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+    <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+  </ul>
+</p>
+</body>
