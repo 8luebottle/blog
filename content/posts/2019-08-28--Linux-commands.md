@@ -66,11 +66,16 @@ description: "자주 쓰이는 리눅스 명령어에 대해 가볍게 살펴보
     line-height: 25px;
     margin: 20px;
   }
-  table, td, th, tr{
+  table, td, tr{
     border: 1px solid #2680d9;
     text-align: left;
     font-size: 13px;
     border-collapse: collapse;
+    padding: 10px;
+  }
+  th{
+    border: 1px solid #2680d9;
+    font-size: 15px;
     padding: 10px;
   }
   tr:first-child{
@@ -101,3 +106,223 @@ description: "자주 쓰이는 리눅스 명령어에 대해 가볍게 살펴보
 <p>
   다양한 리눅스 명령어 중에서 자주 쓰이는 명령어들에 대해 알아보도록 하자.
 </p>
+    <table>
+      <tr>
+        <th><center>Commands</center></th>
+        <th><center>About</center></th>
+      </tr>
+      <tr>
+        <td>
+          <b><center>cd</center></b>
+        </td>
+        <td>
+          <center>Change Directory<br>하위 디렉토리로 이동</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>cd ..</center></b>
+        </td>
+        <td>
+          <center>상위 디렉토리로 이동</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>cp</center></b>
+        </td>
+        <td>
+          <center>
+            Copy<br>
+            파일 복사
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>adduser</center></b>
+        </td>
+        <td>
+          <center>시스템에 사용자 추가</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>ls</center></b>
+        </td>
+        <td>
+          <center>
+            list<br>
+            디렉토리 내 존재하는 파일 보기
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>cat</center></b>
+        </td>
+        <td>
+          <center>터미널 상의 텍스트 파일 보기</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>rm</center></b>
+        </td>
+        <td>
+          <center>파일 지우기</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>rm p</center></b>
+        </td>
+        <td>
+          <center>패키지 지우기</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>rmdir</center></b>
+        </td>
+        <td>
+          <center>
+            Remove Directory<br>
+            디렉토리 지우기
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>mkdir</center></b>
+        </td>
+        <td>
+          <center>
+            Make Directory<br>
+            디렉토리 만들기
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>mv</center></b>
+        </td>
+        <td>
+          <center>
+            Move<br>
+            파일이 있는 위치 변경
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>top</center></b>
+        </td>
+        <td>
+          <center>메모리 상태 보기</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>mount</center></b>
+        </td>
+        <td>
+          <center>장치 연결</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>unmount</center></b>
+        </td>
+        <td>
+          <center>장치 해제</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>kill</center></b>
+        </td>
+        <td>
+          <center>프로세스 종료</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>ps</center></b>
+        </td>
+        <td>
+          <center>
+            Process<br>
+            현재 작동중인 모든 프로세스들 보기
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>find x -name y -print</center></b>
+        </td>
+        <td>
+          <center>디렉토리 x에서 파일 y를 찾아 화면에 출력</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>halt</center></b>
+        </td>
+        <td>
+          <center>시스템 종료</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>touch</center></b>
+        </td>
+        <td>
+          <center>
+            새로운 파일 만들기<br>
+            빈 파일만 생성된다.
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>vi newfile</center></b>
+        </td>
+        <td>
+          <center>만들어지는 새 파일을 vi 편집기 상태로 들어감</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>passwd</center></b>
+        </td>
+        <td>
+          <center>패스워드 변경</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>history</center></b>
+        </td>
+        <td>
+          <center>작성한 명령어들 전부 출력하기</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>df</center></b>
+        </td>
+        <td>
+          <center>용량 확인</center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b><center>whoami</center></b>
+        </td>
+        <td>
+          <center>접속 유저 확인</center>
+        </td>
+      </tr>
+    </table>
+  </p>
