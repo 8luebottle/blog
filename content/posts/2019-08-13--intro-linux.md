@@ -96,8 +96,8 @@ description: "리눅스의 뿌리는 유닉스에서 찾을 수 있다. 유닉�
 </style>
 </head>
 <body>
-<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
-<div style="font-family:Sunflower;">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+<div style="font-family: 'Nanum Gothic Coding', monospace;">
 <img src="/media/linuxHistory.png" alt="Linux History" class="rdimg"  vspace="15px">
 <small><center><p style="padding-bottom: 15px; display:block; clear:both"> Image Source : digitalocean.com</center></small>
 <center font-size="13px">리눅스의 뿌리는 Unix로 부터 비롯되기에 <br>

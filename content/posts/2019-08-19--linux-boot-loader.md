@@ -93,8 +93,8 @@ description: "파워 버튼을 누르면 제일 먼저 실행되는 리눅스의
 </style>
 </head>
 <body>
-<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
-<div style="font-family:Sunflower;">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+<div style="font-family: 'Nanum Gothic Coding', monospace;">
 <img src="/media/linux_gnu.jpg" alt="Linux GNU" class="rdimg"  vspace="15px" height="250">
 <small><center><p style="padding-bottom: 15px; display:block; clear:both" > Image Source : Redbubble.com</center></small>
 <center font-size="13px">시스템 파워 버튼을 누른 다음 리눅스에서는 어떠한 일이 일어날까? </center><br>
