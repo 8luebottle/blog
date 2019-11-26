@@ -1,0 +1,109 @@
+---
+title: RESTful API
+date: "2019-09-09T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/RESTful/"
+category: "WEB"
+tags:
+  - "TIL"
+  - "REST"
+  - "RESTful"
+  - "API"
+
+description: "RESTful API에 대해 알아보자."
+---
+<head>
+  <style>
+    code {background-color: #ececec}
+    p    {font-size: 15px;}
+    tr   {text-align: right;}
+    sub{ font-size: 14px; vertical-align: middle; padding: 0px; line-height: 30px; color: #2680d9;}
+    li {margin: 20px 0px;/* list-style: none; */}
+    strong {font-size: 18px;vertical-align: middle;}
+    small {color: #808080;}
+    #rcorners {border-radius: 25px; border: 2px solid #dd4ecf; padding: 20px; width: 200px; height: 150px;}
+    .rdimg {border-radius: 25px;}
+    .rdimg2 {border-radius: 10px;}
+    .dbul {border-bottom: 3px double;}
+    img{margin-bottom: 10px;}
+    ol, ul{line-height: 30px;}
+    .alignR{text-align: left;}
+    a {text-decoration: none;}
+    table.tableizer-table {
+      font-size: 15px;
+      border: 1px solid #CCC; 
+      border-collapse : collapse;
+    } 
+    .tableizer-table td {
+      padding: 4px;
+      margin: 2px;
+      padding: 8px 20px;
+      border: 1px solid #CCC;
+      text-align : left;
+      line-height : 25px;
+    }
+    .tableizer-table th {
+      background-color: #104E8B; 
+      color: #FFF;
+      margin : 5px;
+      padding : 15px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align : center;
+    }
+  </style>
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  <div style="font-family: 'Nanum Gothic Coding', monospace;">
+  <img src="/media/http.png" alt="HTTP" class=rdimg width="300" vspace= "15">
+  <small><center>
+    <p style="padding-bottom: 15px; display:block; clear:both" >
+  </center></small>
+
+<body>
+  <center><p>
+    Protocol의 한 종류인 http에 대해 알아보자.
+  </center></p>
+
+  ### Table of Contents
+  <small>링크를 클릭하면 해당 내용으로 이동합니다</small>
+
+  + [About HTTP](#about-http) 
+    <br><sub>HyperText Transfer Protocol</sub>
+  + [HTTP Version](#http-version)
+    <br><sub>0.9, 1.0, 1.1, 2.0, 3.0</sub>
+  + [HTTP Structure](#http-structure)<br>
+    <sub>
+      [HTTP Request](#http-request-structure), 
+      [HTTP Response](#http-response-structure)
+    </sub>
+  + [HTTP의 특징](#http의-특징) 
+    <br>
+      <sub>
+      [Connectionless](#connectionless), 
+      [Stateless](#stateless)
+      </sub>
+  + [HTTP Methods](#http-methods)<br>
+    <sub>
+      [GET](#get),
+      [POST](#post),
+      [HEAD](#head),
+      [PUT](#put), 
+      [DELETE](#delete),
+      [TRACE](#trace),
+      [OPTIONS](#options)
+    </sub>
+  + [HTTP Status Code](#http-status-code)<br>
+    <sub>
+      [1XX](#1xx-informational),
+      [2XX](#2xx-success),
+      [3XX](#3xx-redirectional),
+      [4XX](#4xx-client-error),
+      [5XX](#5xx-server-error)
+    </sub>
+  + [References](#references) <sub></sub>
+
+# About HTTP
