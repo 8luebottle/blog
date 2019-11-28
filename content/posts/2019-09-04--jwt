@@ -8,19 +8,27 @@ category: "WEB"
 tags:
   - "TIL"
   - "JWT"
+  - "Stateful"
+  - "Stateless"
 
-description: "JWT"
+description: "JWT와 Sateless에 대해 알아보자"
 ---
 <head>
 <style>
   code {background-color: #ececec}
   p    {font-size: 15px;}
   tr   {text-align: right;}
-  sub{ font-size: 14px; vertical-align: middle; padding: 0px; line-height: 30px; color: #2680d9;}
+  sub { font-size: 14px; vertical-align: middle; padding: 0px; line-height: 30px; color: #2680d9;}
   li {margin: 20px 0px;/* list-style: none; */}
   strong {font-size: 18px;vertical-align: middle;}
   small {color: #808080;}
-  #rcorners {border-radius: 25px; border: 2px solid #dd4ecf; padding: 20px; width: 200px; height: 150px;}
+  #rcorners {
+    border-radius: 25px;
+    border: 2px solid #dd4ecf;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;  
+  }
   .rdimg {border-radius: 25px;}
   img{margin-bottom: 10px;}
   ol, ul{line-height: 30px;}
@@ -28,27 +36,71 @@ description: "JWT"
   table{ width: 100%; line-height: 25px; margin: 20px; font-size: 14px; padding:10px;}
   a {text-decoration: none;}
   td {text-indent: 10px;}
+  img[alt="JWT"] {max-width:  380px;}
 </style>
 </head>
 <body>
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 <div style="font-family: 'Nanum Gothic Coding', monospace;">
-<img src="/media/database.jpg" alt="Database" class="rdimg" vspace="15px" width="300">
-<small><center>
-  <p style="padding-bottom: 15px; display:block; clear:both" >
-  Illustrated by. Alex S. Mostov
-</center></small>
 
-<p>
-  -
-</p>
+![JWT](/media/jwt.gif)
 
 ### Table of Contents
 <small>링크를 클릭하면 해당 내용으로 이동합니다</small>
 
  + [About JWT](#about-jwt) <br>
- + [References](#references)<sub></sub>
+    <sub>Web Toke, Stateful, Stateless</sub>
+ + [JWT Structure](#jwt-structure) <br>
+    <sub>Header, Payload, Signature</sub>
+ + [JWT Authentication Flow](#jwt-authentication-flow)<br>
+    <sub></sub>
+ + [Downsides of JWT](#downsides-of-jwt)<br>
+    <sub></sub>
+ + [References](#references)
 
 ## About JWT
+  <b>JWT : J</b>SON <b>W</b>eb <b>T</b>oken<br> 
+  <sub>* JSON : JavaScript Object Notation</sub>
+
+  JWT는 인증<small>(Authentication)</small>이나 데이터를 안정성 있게 교환할때 사용한다.
+
+  ### Web Token
+  ### Stateful
+  ### Stateless
+
+## JWT Structure
+  ![jwt-structure](/media/jwt-structure.png)
+  JWT 는 Header, Payload, Signature라 불리는 세 부분으로 나뉘는데 각각의 부분은 <code>.</code><small>(dot)</small>을 기반으로 구별된다.
+
+  ### Header
+  헤더 부분에는 토큰의 타입과 알고리즘 종류에 관한 정보가 담기게 된다. 
+
+  <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; width:200px; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">{</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#ffd500">"typ"</span>:&nbsp;<span style="color:#ffd500">"JWT"</span>,&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">&nbsp;&nbsp;<span style="color:#ffd500">"alg"</span>:&nbsp;<span style="color:#ffd500">"HS256"</span>&nbsp;</div><div style="padding:0 6px; white-space:pre; line-height:130%">}</div></div></td><td style="vertical-align:bottom;padding:0 2px 4px 0"></td></tr></table></div>
+
+  + typ : type 토큰의 종류
+  + alg : algorithm 알고리즘 종류 
+
+  현재 우리는 JWT를 사용하기 때문에 <code>typ</code>의 값으로는 <code>JWT</code>를 적어주었다. <code>alg</code>으로는 <code>HS256</code>를 선택하였다. 이로써 웹 토큰중 하나인 JWT가 HS256 알고리즘으로 암호화 될 것이다. 
+  
+  JWT 사용시 자주 쓰는 알고리즘으로는 아래와 같은 것들이 있다.
+  * <b>HS256</b><Br>
+    <b>H</b>MAC + <b>S</b>HA<b>256</b>
+  * <b>RS256</b><br>
+    <b>R</b>SASSA-PKCS1-v1 + <b>S</b>HA<b>256</b>
+  * <b>ES256</b><br>
+    <b>E</b>CDSA + P-256 + <b>S</b>HA<b>256</b>
+
+  ### Payload
+  Payload에 적재하는 정보는 토큰으로 사용하려는 데이터이다. 
+
+  + exp
+  + nbf
+  + iss
+  + aud
+
+  ### Signature
+  Signature는 보안성을 위해 해싱 알고리즘으로 인코딩을 한다. 인코딩 되는 데이터는 Header,Payload, 그리고 Secret Key를 합친 데이터이다.
+
+## Downsides of JWT
 
 ## References

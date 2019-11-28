@@ -1,0 +1,78 @@
+---
+title: Array
+date: "2019-10-07T11:11:11.121Z"
+template: "post"
+draft: false
+slug: "/posts/array/"
+category: "Data Structure"
+tags:
+  - "TIL"
+  - "array"
+  - "배열"
+  - "list"
+  - "Index"
+  - "Python"
+  - "JavaScript"
+
+description: "JavaScript와 Python의 배열에 대해 알아보자."
+---
+<head>
+  <style>
+    code {background-color: #ececec}
+    p    {font-size: 15px;}
+    tr   {text-align: right;}
+    sub{ font-size: 14px; vertical-align: middle; padding: 0px; line-height: 30px; color: #2680d9;}
+    li {margin: 20px 0px;/* list-style: none; */}
+    strong {font-size: 18px;vertical-align: middle;}
+    small {color: #808080;}
+    #rcorners {border-radius: 25px; border: 2px solid #dd4ecf; padding: 20px; width: 200px; height: 150px;}
+    .rdimg {border-radius: 25px;}
+    .rdimg2 {border-radius: 10px;}
+    .dbul {border-bottom: 3px double;}
+    img{margin-bottom: 10px;}
+    ol, ul{line-height: 30px;}
+    .alignR{text-align: left;}
+    a {text-decoration: none;}
+    table.tableizer-table {
+      font-size: 15px;
+      border: 1px solid #CCC; 
+      border-collapse : collapse;
+    } 
+    .tableizer-table td {
+      padding: 4px;
+      margin: 2px;
+      padding: 8px 20px;
+      border: 1px solid #CCC;
+      text-align : left;
+      line-height : 25px;
+    }
+    .tableizer-table th {
+      background-color: #104E8B; 
+      color: #FFF;
+      margin : 5px;
+      padding : 15px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align : center;
+    }
+  </style>
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+  <div style="font-family: 'Nanum Gothic Coding', monospace;">
+  <img src="/media/#" alt="HTTP" class=rdimg width="300" vspace= "15">
+  <small><center>
+    <p style="padding-bottom: 15px; display:block; clear:both" >
+  </center></small>
+
+<body>
+  <center><p>
+    -
+  </center></p>
+
+  ### Table of Contents
+  <small>링크를 클릭하면 해당 내용으로 이동합니다</small>
+
+  + [-](#-) 
+    <br><sub>-</sub>
