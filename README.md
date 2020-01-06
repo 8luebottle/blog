@@ -5,10 +5,13 @@ Contents of my blog
 + Articles : Translation of Articles
 
 ## Focus on
++ Python
 + JavaScript
 + C | C++
++ Django
 + React | React Native
 + node.js
++ Computer Science
 
 
 ## Folder Structure
