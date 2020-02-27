@@ -1,10 +1,12 @@
-## Developer Blog
+# Developer Blog
+![Made with love by 8luebottle](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8Fby-%208luebottle%20-blue)  
 Contents of my blog
 + Think : Personal Thinking
 + TIL : Today I Learned
 + Articles : Translation of Articles
 
 ## Focus on
++ Go
 + Python
 + JavaScript
 + C | C++
