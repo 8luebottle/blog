@@ -1,10 +1,10 @@
 ---
-title: Goroutune
+title: Goroutine
 date: "2020-07-19T11:11:11.121Z"
 template: "post"
 draft: false
 slug: "/posts/goroutine/"
-category: "DB"
+category: "Go"
 tags:
   - "TIL"
   - "golang"
@@ -58,22 +58,20 @@ description: "goroutine 에 관하여 알아보자"
  + [References](#references)
 
 ## About Goroutine  
-Go 는 Concurrent 언어이다.  
-Go 에서는 동시성(병행성) 구현을 위해 goroutine 을 사용한다. 
-
 <p>
+Go 는 Concurrent 언어이다.<br>
+Go 에서는 동시성(병행성) 구현을 위해 goroutine 을 사용한다.<br>
   <sub>
     * 동시성과 병렬성은 다르다. <br>
-    <small> &nbsp;&nbsp;Concurrency(동시성 / 병행성) Vs. Parallelism(병렬성) 에 관하여는 다른 포스트에서 다룰 것이다.<br>
+    <small> &nbsp;&nbsp;Concurrency(동시성 / 병행성) Vs. Parallelism(병렬성) 에 관하여는 다른 포스트에서 다룰 것이다.<br><br>
     </small>
   </sub>
   고루틴을 통해 한번에 여러개의 일을 동시에 실행할 수 있게 된다.  각각 실행되는 고루틴은 독립적으로서<small>(의존적이지 않은 관계)</small> 서로에게 영향을 주지 않는다.  
 
   경량 스레드(thread)인 고루틴은 Go runtime에 의해 관리된다.  
   <sub>
-    * 스레드 : 프로세스 내에서 실행되는 흐름의 단위
-  </sub>
-
+    * 스레드 : 프로세스 내에서 실행되는 흐름의 단위  
+  </sub><br>
   여기서의 경량<small>(lightweight)</small>은 고루틴을 생성하는데 적은 메모리가 든다는 것을 의미한다.  
   OS의 Thread 와 goroutine<small>(일종의 스레드)</small> 을 비교하였을 때 고루틴의 가벼움을 확실히 느낄 수 있다. 보통의 OS Thread 같은 경우 개당 1MB의 메모리 크기가 필요하지만 goroutine은 단지 2KB(0.002 MB) 크기로서 생성 가능하기 때문이다.<br>
   <sub>
@@ -91,8 +89,8 @@ Go 에서는 동시성(병행성) 구현을 위해 goroutine 을 사용한다.
 
 
 ## Create Goroutine
-```go``` 키워드를 통해 고루틴을 생성할 수 있다.  
-간단히 함수 혹은 메서드 앞에 ```go``` 키워드를 붙여주면 된다.  
+<code>go</code> 키워드를 통해 고루틴을 생성할 수 있다.  
+간단히 함수 혹은 메서드 앞에 <code>go</code> 키워드를 붙여주면 된다.  
 
 **Syntax**
 <div class="colorscripter-code" style="color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important; position:relative !important;overflow:auto"><table class="colorscripter-code-table" style="margin:0;padding:0;border:none;background-color:#272727;border-radius:4px;" cellspacing="0" cellpadding="0"><tr><td style="padding:6px;border-right:2px solid #4f4f4f"><div style="margin:0;padding:0;word-break:normal;text-align:right;color:#aaa;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="line-height:130%">1</div></div></td><td style="padding:6px 0;text-align:left"><div style="margin:0;padding:0;color:#f0f0f0;font-family:Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;line-height:130%"><div style="padding:0 6px; white-space:pre; line-height:130%">go&nbsp;func()</div></div></td></tr></table></div>
