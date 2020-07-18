@@ -113,8 +113,16 @@ module.exports = {
         ]
       }
     },
-    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        useMozJpeg: false,
+        tripMetadata: true,
+        defaultQuality: 75,
+        checkSupportedExtensions: false,
+      },
+    },
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',
