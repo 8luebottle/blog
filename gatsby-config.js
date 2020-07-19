@@ -106,6 +106,16 @@ module.exports = {
             resolve: 'gatsby-remark-responsive-iframe',
             options: { wrapperStyle: 'margin-bottom: 1.0725rem' }
           },
+          {
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: "<string>",
+              includeDefaultCss: true,
+              gistDefaultCssInclude: true || false,
+              gistCssPreload: true || false,
+              gistCssUrlAddress: "<string>"
+            }
+          },
           'gatsby-remark-autolink-headers',
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
@@ -182,6 +192,7 @@ module.exports = {
         icon: 'static/photo.jpg'
       },
     },
+
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
