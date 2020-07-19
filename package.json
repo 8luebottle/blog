@@ -60,6 +60,7 @@
     "gatsby-plugin-sitemap": "^2.4.11",
     "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-copy-linked-files": "^2.3.11",
+    "gatsby-remark-embed-gist": "^1.2.0",
     "gatsby-remark-images": "^3.3.19",
     "gatsby-remark-images-contentful": "^2.3.11",
     "gatsby-remark-katex": "^3.3.10",

@@ -104,7 +104,6 @@ Go 에서는 동시성(병행성) 구현을 위해 goroutine 을 사용한다.<b
   </sub>
 </p>
 
-
 `gist:8luebottle/bd58660e470fc67723886af4cdec9324#gistfile1.go`
 
 ### main goroutine

@@ -110,7 +110,7 @@ module.exports = {
             resolve: "gatsby-remark-embed-gist",
             options: {
               username: "<string>",
-              includeDefaultCss: true,
+              includeDefaultCss: true || false,
               gistDefaultCssInclude: true || false,
               gistCssPreload: true || false,
               gistCssUrlAddress: "<string>"
