@@ -92,6 +92,14 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          // {
+          //   resolve: `gatsby-remark-highlight-code`,
+          //   options: {
+          //     terminal: 'carbon',
+          //     theme: 'monokai',
+          //     lineNumbers: true
+          //   }
+          // },
           {
             resolve: 'gatsby-remark-katex',
             options: {
@@ -192,7 +200,6 @@ module.exports = {
         icon: 'static/photo.jpg'
       },
     },
-
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
