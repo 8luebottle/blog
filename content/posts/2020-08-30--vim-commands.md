@@ -66,10 +66,10 @@ description: "Vim Commands"
 
 
 # VIM Commands
-> I'm currently using 
-* VIM Editor for `Python` <small>(iTerm)</small>
-* IdeaVim for `Golang` <small>(IntellJ)</small>
-* VSCodeVim for `JavaScript` <small>(VS Code)</small>
+I'm currently using  
+* VIM Editor for <code>Python</code> <small>(iTerm)</small>
+* IdeaVim for <code>Golang</code> <small>(IntellJ)</small>
+* VSCodeVim for <code>JavaScript</code> <small>(VS Code)</small>
 
 
 Vim has 3 modes.
@@ -79,8 +79,6 @@ Vim has 3 modes.
   Navigate and manipulate text
 1. **Command Mode**  
   Can input a wide variety of commands.
-
-[↑ return to TOC](#table-of-contents)
 
 
 ## Change Modes
